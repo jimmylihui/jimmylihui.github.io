@@ -23,7 +23,7 @@ Work experience
   * Duties included: Research
   * Supervisor: Professor Dit-Yan
 
-Publications
+Papers
 ======
 
 * **A teaching app to demonstrate hebb‘s learning rule**, Bachelor thesis, 2021.* [[pdf](https://github.com/jimmylihui/jimmylihui.github.io/blob/master/files/app%20to%20illustrate%20hebb%20rule.pdf)]
