@@ -26,9 +26,7 @@ Work experience
 Papers
 ======
 * A teaching app to demonstrate Hebb's learning rule
-  * bachelor thesis
-* 
-  * Hong Kong University of Science and technology 
-  * Duties included: Research
-  * Supervisor: Professor Dit-Yan
+  * bachelor degree thesis
+* Principal component analysis machine learning to determine membership of globular cluster M56
+  * Master degree thesis
 
