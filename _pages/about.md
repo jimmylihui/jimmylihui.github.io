@@ -29,4 +29,4 @@ Publications
 \* denote equal contribution
 * **A teaching app to demonstrate hebb‘s learning rule**, Bachelor thesis, 2021.* [[pdf](https://github.com/jimmylihui/jimmylihui.github.io/blob/master/files/app%20to%20illustrate%20hebb%20rule.pdf)]
 
-* **Principal component analysis machine learning to determine membership of globular cluster M56**, Master thesis, 2022.* 
+* **Principal component analysis machine learning to determine membership of globular cluster M56**, Master thesis, 2022.* [[pdf](https://github.com/jimmylihui/jimmylihui.github.io/blob/master/files/app%20to%20illustrate%20hebb%20rule.pdf)]
