@@ -27,6 +27,7 @@ Papers
 ======
 * A teaching app to demonstrate Hebb's learning rule
   * bachelor degree thesis
+
 * Principal component analysis machine learning to determine membership of globular cluster M56
   * Master degree thesis
 
