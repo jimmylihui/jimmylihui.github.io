@@ -25,8 +25,9 @@ Work experience
 
 Papers
 ======
-*A teaching app to demonstrate Hebb's learning rule 
-  *(Bachelor thesis)
-*Principal component analysis machine learning to determine membership of globular cluster M56
-  *(Master thesis)
+* A teaching app to demonstrate Hebb's learning rule 
+  * (Bachelor thesis)
+  
+* Principal component analysis machine learning to determine membership of globular cluster M56
+  * (Master thesis)
 
