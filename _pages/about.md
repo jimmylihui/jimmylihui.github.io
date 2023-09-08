@@ -27,8 +27,7 @@ Publications
 ======
 <!-- [→ Full list](/projects/) -->
 \* denote equal contribution
-* **Revisiting Personalized Federated Learning: Robustness Against Backdoor Attacks**, Zeyu Qin, Liuyi Yao, Daoyuan Chen, Yaliang Li, Boling Ding, Minhao Cheng, *In ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD), 2023.* [[pdf](https://github.com/jimmylihui/jimmylihui.github.io/blob/master/files/app%20to%20illustrate%20hebb%20rule.pdf)]
+* **A teaching app to demonstrate hebb‘s learning rule**, Bachelor thesis, 2021.* [[pdf](https://github.com/jimmylihui/jimmylihui.github.io/blob/master/files/app%20to%20illustrate%20hebb%20rule.pdf)]
 
-* Principal component analysis machine learning to determine membership of globular cluster M56
-  * Master degree thesis
+* **Principal component analysis machine learning to determine membership of globular cluster M56**, Master thesis, 2022.* [[pdf]([https://github.com/jimmylihui/jimmylihui.github.io/blob/master/files/app%20to%20illustrate%20hebb%20rule.pdf](https://github.com/jimmylihui/jimmylihui.github.io/blob/master/files/Principal%20component%20analysis%20machine%20learning%20to%20determine%20membership%20of%20globular%20cluster%20M56.pdf)https://github.com/jimmylihui/jimmylihui.github.io/blob/master/files/Principal%20component%20analysis%20machine%20learning%20to%20determine%20membership%20of%20globular%20cluster%20M56.pdf)]
 
