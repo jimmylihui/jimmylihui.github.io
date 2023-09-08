@@ -23,11 +23,11 @@ Work experience
   * Duties included: Research
   * Supervisor: Professor Dit-Yan
 
-Papers
+Publications
 ======
-* A teaching app to demonstrate Hebb's learning rule
-  * bachelor degree thesis
-  * [Download paper here](http://academicpages.github.io/files/Principal component analysis machine learning to determine membership of globular cluster M56.pdf)
+<!-- [→ Full list](/projects/) -->
+\* denote equal contribution
+* **Revisiting Personalized Federated Learning: Robustness Against Backdoor Attacks**, Zeyu Qin, Liuyi Yao, Daoyuan Chen, Yaliang Li, Boling Ding, Minhao Cheng, *In ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD), 2023.* [[pdf](https://arxiv.org/pdf/2302.01677.pdf)]
 
 * Principal component analysis machine learning to determine membership of globular cluster M56
   * Master degree thesis
