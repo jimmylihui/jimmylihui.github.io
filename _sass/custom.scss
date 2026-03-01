@@ -1,0 +1,145 @@
+/* ==========================================================================
+   Custom styles - Jiahui Li academic website
+   ========================================================================== */
+
+/* Hero banner - when using overlay_color only */
+.page__hero--overlay {
+  padding: 3em 2em;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+
+  .page__title {
+    color: #fff !important;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  }
+
+  .page__lead {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.2em;
+    max-width: 600px;
+  }
+}
+
+/* Refined color palette - warm academic aesthetic */
+$accent-color: #1a5f7a;
+$accent-hover: #0d3d4d;
+$section-border: #e8eef1;
+
+/* Typography improvements */
+.page__content {
+  font-size: 1.05em;
+  line-height: 1.7;
+
+  h2 {
+    color: $accent-color;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    margin-top: 2em;
+    padding-bottom: 0.4em;
+    border-bottom: 2px solid $section-border;
+  }
+
+  h3 {
+    color: $darker-gray;
+    font-weight: 600;
+    margin-top: 1.5em;
+  }
+
+  ul {
+    margin-left: 1.2em;
+
+    li {
+      margin-bottom: 0.5em;
+    }
+  }
+
+  strong {
+    color: $darker-gray;
+  }
+
+  a {
+    color: $accent-color;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: $accent-hover;
+    }
+  }
+}
+
+/* Author profile sidebar - enhanced */
+.author__avatar img {
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: 3px solid #f0f4f6;
+}
+
+.author__name {
+  color: $accent-color !important;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.author__bio {
+  color: $gray !important;
+  font-size: 0.95em;
+  line-height: 1.5;
+}
+
+/* Masthead / navigation */
+.masthead {
+  background: linear-gradient(135deg, #f8fafb 0%, #fff 100%);
+  border-bottom: 1px solid $section-border;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.masthead__menu-item a {
+  transition: color 0.2s ease;
+}
+
+/* Page title */
+.page__title {
+  color: $accent-color !important;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+/* Footer */
+.page__footer {
+  background: linear-gradient(180deg, #f8fafb 0%, #f0f4f6 100%);
+  border-top: 1px solid $section-border;
+  padding: 2em 0;
+  margin-top: 3em;
+}
+
+/* Social icons - subtle hover */
+.social-icons a {
+  transition: transform 0.2s ease, color 0.2s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+}
+
+/* Notice boxes / highlights */
+.notice {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+/* Smooth transitions */
+#main {
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

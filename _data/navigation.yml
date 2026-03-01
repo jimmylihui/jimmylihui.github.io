@@ -1,14 +1,9 @@
-# main links links
-# main:
-#   - title: "Papers"
-#     url: /publications/
-    
-#   - title: "Portfolio"
-#     url: /portfolio/
-
-#   - title: "Personal interest"
-#     url: /personal_interest/
-    
-#   - title: "CV"
-#     url: /cv/
+# main links
+main:
+  - title: "About"
+    url: /
+  - title: "Publications"
+    url: /publications/
+  - title: "Talks"
+    url: /talks/
     
