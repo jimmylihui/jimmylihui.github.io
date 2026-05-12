@@ -1,49 +1,116 @@
 ---
 permalink: /
 title: "About me"
-excerpt: "PhD student at University of Georgia"
+excerpt: "PhD student at the University of Georgia working on deep learning for time series, signal processing, and biomedical applications."
 author_profile: true
 header:
-  overlay_color: "#1a5f7a"
-  overlay_filter: "0.2"
+  overlay_color: "#123f52"
+  overlay_filter: "0.15"
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-I am currently a PhD student at the University of Georgia (UGA) under the supervision of Dr. Fei Dou. My research interests include deep learning applications in time series, signal processing, and biomedical applications. I am particularly interested in applications related to everyday life, such as computer vision and reinforcement learning.
+<div class="intro-panel">
+  <p class="intro-kicker">PhD Student · University of Georgia</p>
+  <p class="intro-lead">I study deep learning for time series, signal processing, and biomedical applications, with a particular interest in systems that connect machine learning research to everyday life.</p>
+  <div class="intro-actions">
+    <a class="btn btn--primary" href="/publications/">View Publications</a>
+    <a class="btn btn--inverse" href="https://scholar.google.com/citations?user=CGnz6VQAAAAJ&hl=en">Google Scholar</a>
+    <a class="btn btn--inverse" href="https://github.com/jimmylihui">GitHub</a>
+  </div>
+</div>
 
-Education
-======
-* B.S. in Computer Science and Engineering, University of Liverpool, 2021
-* M.S. in Scientific and Data-intensive Computing, University College London, 2022
-* Ph.D. in progress, University of Georgia, 2024–present (supervisor: Dr. Fei Dou)
+<div class="profile-highlights">
+  <div class="highlight-card">
+    <span class="highlight-label">Focus</span>
+    <strong>Deep learning for time series</strong>
+    <p>Modeling sequential, cardiomechanical, biomedical, and signal-rich data.</p>
+  </div>
+  <div class="highlight-card">
+    <span class="highlight-label">Current Role</span>
+    <strong>PhD student at UGA</strong>
+    <p>Advised by Dr. Fei Dou and working across AI, health, and data science.</p>
+  </div>
+  <div class="highlight-card">
+    <span class="highlight-label">Research Style</span>
+    <strong>Applied, careful, human-centered</strong>
+    <p>Building models and benchmarks that make complex data more useful.</p>
+  </div>
+</div>
 
+## Research Interests
 
-Work experience
-======
-* 2024–present: PhD Student
-  * University of Georgia
-  * Supervisor: Dr. Fei Dou
+My research interests include deep learning applications in time series, signal processing, and biomedical applications. I am especially drawn to practical AI problems involving computer vision, reinforcement learning, health data, and scientific discovery.
 
-* 2023-2024: Research Assistant
-  * Hong Kong University of Science and Technology
-  * Duties included: Research
-  * Supervisor: Professor Dit-Yan
+## Education
 
-Papers
-======
+<div class="timeline">
+  <div class="timeline-item">
+    <span class="timeline-date">2024-present</span>
+    <div>
+      <strong>Ph.D. in progress</strong>
+      <p>University of Georgia · Supervisor: Dr. Fei Dou</p>
+    </div>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-date">2022</span>
+    <div>
+      <strong>M.S. in Scientific and Data-intensive Computing</strong>
+      <p>University College London</p>
+    </div>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-date">2021</span>
+    <div>
+      <strong>B.S. in Computer Science and Engineering</strong>
+      <p>University of Liverpool</p>
+    </div>
+  </div>
+</div>
 
-* **Peak-R1: Instruction-Tuned Large Language Models for Robust J-Peak Detection in Cardiomechanical Signals** (J Li, Y Zhang, Z Zeng, J Chen, X Zhang, J Lu, WZ Song, F Dou). NeurIPS 2025 Workshop on Learning from Time Series for Health. [[link](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=CGnz6VQAAAAJ&citation_for_view=CGnz6VQAAAAJ:9yKSN-GCB0IC)]
+## Experience
 
-* **Alignment and Safety in Large Language Models: Safety Mechanisms, Training Paradigms, and Emerging Challenges** (H Lu, L Fang, R Zhang, et al.). arXiv preprint arXiv:2507.19672, 2025. [[pdf](https://arxiv.org/abs/2507.19672)]
+<div class="timeline">
+  <div class="timeline-item">
+    <span class="timeline-date">2024-present</span>
+    <div>
+      <strong>PhD Student</strong>
+      <p>University of Georgia · Supervisor: Dr. Fei Dou</p>
+    </div>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-date">2023-2024</span>
+    <div>
+      <strong>Research Assistant</strong>
+      <p>Hong Kong University of Science and Technology · Supervisor: Professor Dit-Yan Yeung</p>
+    </div>
+  </div>
+</div>
 
-* **Genbench: A Benchmarking Suite for Systematic Evaluation of Genomic Foundation Models** (Z Liu, J Li, S Li, Z Zang, C Tan, Y Huang, Y Bai, SZ Li). arXiv preprint arXiv:2406.01627, 2024. [[pdf](https://arxiv.org/abs/2406.01627)]
+## Selected Papers
 
-* **MGTST: Multi-scale and Cross-channel Gated Transformer for Multivariate Long-term Time-series Forecasting** (J Li, Z Zhou, DY Yeung). 2024. [[link](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=CGnz6VQAAAAJ&citation_for_view=CGnz6VQAAAAJ:u5HHmVD_uO8C)]
-
-* **Principal component analysis machine learning to determine membership of globular cluster M56**, Master thesis, University College London, 2022. [[pdf](https://github.com/jimmylihui/jimmylihui.github.io/blob/master/files/Principal%20component%20analysis%20machine%20learning%20to%20determine%20membership%20of%20globular%20cluster%20M56.pdf)]
-
-* **A teaching app to demonstrate Hebb's learning rule**, Bachelor thesis, University of Liverpool, 2021. [[pdf](https://github.com/jimmylihui/jimmylihui.github.io/blob/master/files/app%20to%20illustrate%20hebb%20rule.pdf)]
+<div class="publication-list">
+  <article>
+    <h3>Peak-R1: Instruction-Tuned Large Language Models for Robust J-Peak Detection in Cardiomechanical Signals</h3>
+    <p>J Li, Y Zhang, Z Zeng, J Chen, X Zhang, J Lu, WZ Song, F Dou. NeurIPS 2025 Workshop on Learning from Time Series for Health.</p>
+    <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=CGnz6VQAAAAJ&citation_for_view=CGnz6VQAAAAJ:9yKSN-GCB0IC">Read more</a>
+  </article>
+  <article>
+    <h3>Alignment and Safety in Large Language Models: Safety Mechanisms, Training Paradigms, and Emerging Challenges</h3>
+    <p>H Lu, L Fang, R Zhang, et al. arXiv preprint arXiv:2507.19672, 2025.</p>
+    <a href="https://arxiv.org/abs/2507.19672">Read the paper</a>
+  </article>
+  <article>
+    <h3>Genbench: A Benchmarking Suite for Systematic Evaluation of Genomic Foundation Models</h3>
+    <p>Z Liu, J Li, S Li, Z Zang, C Tan, Y Huang, Y Bai, SZ Li. arXiv preprint arXiv:2406.01627, 2024.</p>
+    <a href="https://arxiv.org/abs/2406.01627">Read the paper</a>
+  </article>
+  <article>
+    <h3>MGTST: Multi-scale and Cross-channel Gated Transformer for Multivariate Long-term Time-series Forecasting</h3>
+    <p>J Li, Z Zhou, DY Yeung. 2024.</p>
+    <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=CGnz6VQAAAAJ&citation_for_view=CGnz6VQAAAAJ:u5HHmVD_uO8C">Read more</a>
+  </article>
+</div>
 
 See [Publications](/publications/) for the full list.
