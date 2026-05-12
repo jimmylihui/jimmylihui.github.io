@@ -92,6 +92,11 @@ My research interests include deep learning applications in time series, signal 
 
 <div class="publication-list">
   <article>
+    <h3>ADLGen: Synthesizing Symbolic, Event-Triggered Sensor Sequences for Smart-Home Human Activity Modeling</h3>
+    <p>W You, H Jiang, J Li, Z Liu, T Liu, J Lu, F Dou. Proceedings of the 2026 ACM/IEEE International Conference on Embedded Artificial Intelligence and Sensing Systems.</p>
+    <a href="https://dl.acm.org/doi/10.1145/3774906.3802796">Read the paper</a>
+  </article>
+  <article>
     <h3>Peak-R1: Instruction-Tuned Large Language Models for Robust J-Peak Detection in Cardiomechanical Signals</h3>
     <p>J Li, Y Zhang, Z Zeng, J Chen, X Zhang, J Lu, WZ Song, F Dou. NeurIPS 2025 Workshop on Learning from Time Series for Health.</p>
     <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=CGnz6VQAAAAJ&citation_for_view=CGnz6VQAAAAJ:9yKSN-GCB0IC">Read more</a>
