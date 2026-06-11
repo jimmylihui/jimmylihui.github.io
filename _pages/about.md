@@ -4,8 +4,8 @@ title: "About me"
 excerpt: "PhD student at the University of Georgia working on deep learning for time series, signal processing, and biomedical applications."
 author_profile: true
 header:
-  overlay_color: "#123f52"
-  overlay_filter: "0.15"
+  overlay_color: "#0b2a36"
+  overlay_filter: "0.1"
 redirect_from: 
   - /about/
   - /about.html
