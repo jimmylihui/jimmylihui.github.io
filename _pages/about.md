@@ -92,29 +92,40 @@ My research interests include deep learning applications in time series, signal 
 
 <div class="publication-list">
   <article>
+    <span class="pub-tag">2026 · arXiv</span>
+    <h3>Peak-Detector: Explainable Peak Detection via Instruction-Tuned Large Language Models in Physiological Signals</h3>
+    <p>J Li, Y Zhang, Z Zeng, J Chen, Y Song, Y Xiao, N Dong, J Lu, Y Kwon, F Dou. arXiv:2605.16452, 2026.</p>
+    <a href="https://arxiv.org/abs/2605.16452">Read the paper</a>
+  </article>
+  <article>
+    <span class="pub-tag">2026 · arXiv</span>
+    <h3>DeepArrhythmia: Segment-Contextualized ECG Arrhythmia Classification via Selective Evidence Acquisition</h3>
+    <p>J Li, R Fang, Z Liu, WZ Song, J Lu, F Dou. arXiv:2605.16441, 2026.</p>
+    <a href="https://arxiv.org/abs/2605.16441">Read the paper</a>
+  </article>
+  <article>
+    <span class="pub-tag">2026 · ACM/IEEE</span>
     <h3>ADLGen: Synthesizing Symbolic, Event-Triggered Sensor Sequences for Smart-Home Human Activity Modeling</h3>
     <p>W You, H Jiang, J Li, Z Liu, T Liu, J Lu, F Dou. Proceedings of the 2026 ACM/IEEE International Conference on Embedded Artificial Intelligence and Sensing Systems.</p>
     <a href="https://dl.acm.org/doi/10.1145/3774906.3802796">Read the paper</a>
   </article>
   <article>
+    <span class="pub-tag">2025 · NeurIPS Workshop</span>
     <h3>Peak-R1: Instruction-Tuned Large Language Models for Robust J-Peak Detection in Cardiomechanical Signals</h3>
     <p>J Li, Y Zhang, Z Zeng, J Chen, X Zhang, J Lu, WZ Song, F Dou. NeurIPS 2025 Workshop on Learning from Time Series for Health.</p>
     <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=CGnz6VQAAAAJ&citation_for_view=CGnz6VQAAAAJ:9yKSN-GCB0IC">Read more</a>
   </article>
   <article>
+    <span class="pub-tag">2025 · arXiv</span>
     <h3>Alignment and Safety in Large Language Models: Safety Mechanisms, Training Paradigms, and Emerging Challenges</h3>
     <p>H Lu, L Fang, R Zhang, et al. arXiv preprint arXiv:2507.19672, 2025.</p>
     <a href="https://arxiv.org/abs/2507.19672">Read the paper</a>
   </article>
   <article>
+    <span class="pub-tag">2024 · arXiv</span>
     <h3>Genbench: A Benchmarking Suite for Systematic Evaluation of Genomic Foundation Models</h3>
     <p>Z Liu, J Li, S Li, Z Zang, C Tan, Y Huang, Y Bai, SZ Li. arXiv preprint arXiv:2406.01627, 2024.</p>
     <a href="https://arxiv.org/abs/2406.01627">Read the paper</a>
-  </article>
-  <article>
-    <h3>MGTST: Multi-scale and Cross-channel Gated Transformer for Multivariate Long-term Time-series Forecasting</h3>
-    <p>J Li, Z Zhou, DY Yeung. 2024.</p>
-    <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=CGnz6VQAAAAJ&citation_for_view=CGnz6VQAAAAJ:u5HHmVD_uO8C">Read more</a>
   </article>
 </div>
 
