@@ -2,7 +2,7 @@
 layout: archive
 title: "Personal Interest"
 permalink: /personal_interest/
-author_profile: true
+author_profile: false
 redirect_from:
   - /resume
 ---

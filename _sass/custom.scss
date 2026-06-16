@@ -1,777 +1,380 @@
 /* ==========================================================================
-   Custom styles - Jiahui Li academic website
+   al-folio-style theme for Jiahui Li — single column, minimal, light
    ========================================================================== */
 
-/* Design tokens */
-$accent-color: #0e6473;
-$accent-hover: #0a4854;
-$accent-soft: rgba(14, 100, 115, 0.08);
-$leaf: #4f7f5d;
-$ink-color: #182830;
-$muted-ink: #5d6e77;
-$section-border: #e3eaec;
-$soft-panel: #f4f9fa;
-$warm-panel: #faf8f3;
-$paper: #fbfbf9;
+$theme:        #0076df;
+$theme-hover:  #0056a8;
+$ink:          #1c1c1d;
+$muted:        #828282;
+$divider:      #e8e8e8;
+$badge-bg:     #eef4fb;
+$font-sans:    "Inter", -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
 
-$font-body: "Inter", -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
-$font-display: "Source Serif 4", Georgia, "Times New Roman", serif;
-
-/* ==========================================================================
-   Global typography & base
-   ========================================================================== */
-
-html {
-  scroll-behavior: smooth;
-}
+/* ---- Base ---- */
+html { scroll-behavior: smooth; }
 
 body {
-  font-family: $font-body;
-  color: $ink-color;
-  background: $paper;
+  font-family: $font-sans;
+  color: $ink;
+  background: #fff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1, h2, h3, h4 {
-  font-family: $font-display;
-  letter-spacing: -0.01em;
+/* Single centered column — kill the Minimal Mistakes sidebar grid */
+#main {
+  max-width: 840px !important;
+  margin: 1.5rem auto 0 !important;
+  padding: 0 1.5rem !important;
+  animation: fadeIn 0.4s ease-out;
 }
 
-/* ==========================================================================
-   Masthead / navigation — clean sticky bar
-   ========================================================================== */
+.page,
+.archive {
+  float: none !important;
+  width: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
 
+.page__inner-wrap { margin: 0; }
+
+.sidebar { display: none !important; }
+
+::selection { background: rgba(0, 118, 223, 0.16); }
+
+/* ---- Masthead / nav (al-folio navbar) ---- */
 .masthead {
   position: sticky;
   top: 0;
   z-index: 20;
-  background: rgba(251, 251, 249, 0.85);
-  backdrop-filter: saturate(160%) blur(12px);
-  -webkit-backdrop-filter: saturate(160%) blur(12px);
-  border-bottom: 1px solid $section-border;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: saturate(180%) blur(10px);
+  -webkit-backdrop-filter: saturate(180%) blur(10px);
+  border-bottom: 1px solid $divider;
   box-shadow: none;
 }
 
 .masthead__inner-wrap {
-  padding: 0.7em 1em;
+  max-width: 840px;
+  padding: 0.7em 1.5em;
 }
 
+.greedy-nav a.site-title,
 .site-title {
-  font-family: $font-display;
   font-weight: 700;
   font-size: 1.25em;
-  color: $ink-color !important;
-}
-
-.masthead__menu-item {
-  a {
-    position: relative;
-    padding: 0.4em 0.2em;
-    margin: 0 0.55em;
-    color: $muted-ink;
-    font-size: 0.92em;
-    font-weight: 500;
-    transition: color 0.2s ease;
-
-    &::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      right: 100%;
-      bottom: 0;
-      height: 2px;
-      background: $accent-color;
-      transition: right 0.25s ease;
-    }
-
-    &:hover {
-      color: $accent-hover;
-
-      &::after {
-        right: 0;
-      }
-    }
-  }
-}
-
-/* ==========================================================================
-   Hero banner
-   ========================================================================== */
-
-.page__hero--overlay {
-  position: relative;
-  min-height: 300px;
-  margin-bottom: 2em;
-  padding: 5em 2em;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-  background:
-    radial-gradient(1.5px 1.5px at 24px 24px, rgba(255, 255, 255, 0.16) 1px, transparent 0),
-    radial-gradient(ellipse 80% 90% at 75% 10%, rgba(79, 127, 93, 0.35), transparent 60%),
-    linear-gradient(150deg, #0b2a36 0%, #0e4a5a 60%, #14606e 100%) !important;
-  background-size: 48px 48px, auto, auto !important;
-
-  &::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 90px;
-    background: linear-gradient(180deg, transparent, rgba(11, 42, 54, 0.45));
-    pointer-events: none;
-  }
-
-  .wrapper {
-    position: relative;
-    z-index: 1;
-  }
-
-  .page__title {
-    margin-bottom: 0.3em;
-    color: #fff !important;
-    font-size: 2.6em;
-    font-weight: 700;
-    letter-spacing: -0.015em;
-    text-shadow: 0 2px 18px rgba(5, 22, 29, 0.35);
-  }
-
-  .page__lead {
-    max-width: 680px;
-    color: rgba(255, 255, 255, 0.88);
-    font-size: 1.16em;
-    font-weight: 400;
-    line-height: 1.65;
-  }
-}
-
-/* ==========================================================================
-   Content typography
-   ========================================================================== */
-
-.page__content {
-  font-size: 1.04em;
-  line-height: 1.75;
-  color: $ink-color;
-
-  h2 {
-    display: flex;
-    align-items: center;
-    gap: 0.55em;
-    margin-top: 2.4em;
-    padding-bottom: 0;
-    border-bottom: none;
-    color: $ink-color;
-    font-size: 1.55em;
-    font-weight: 700;
-
-    &::before {
-      content: "";
-      flex: none;
-      width: 10px;
-      height: 26px;
-      border-radius: 3px;
-      background: linear-gradient(180deg, $accent-color, $leaf);
-    }
-
-    &::after {
-      content: "";
-      flex: 1;
-      height: 1px;
-      background: $section-border;
-      margin-left: 0.4em;
-    }
-  }
-
-  h3 {
-    color: $ink-color;
-    font-weight: 600;
-    margin-top: 1.5em;
-  }
-
-  ul {
-    margin-left: 1.2em;
-
-    li {
-      margin-bottom: 0.5em;
-    }
-  }
-
-  strong {
-    color: $ink-color;
-    font-weight: 600;
-  }
-
-  a {
-    color: $accent-color;
-    text-decoration-color: rgba(14, 100, 115, 0.35);
-    text-underline-offset: 3px;
-    transition: color 0.2s ease;
-
-    &:hover {
-      color: $accent-hover;
-    }
-  }
-
-  .btn {
-    text-decoration: none;
-  }
-}
-
-/* ==========================================================================
-   Intro panel (homepage)
-   ========================================================================== */
-
-.intro-panel {
-  position: relative;
-  margin: 0 0 2em;
-  padding: 2em 2.2em;
-  background: #fff;
-  border: 1px solid $section-border;
-  border-radius: 18px;
-  box-shadow: 0 24px 60px -24px rgba(11, 42, 54, 0.18);
-  overflow: hidden;
-
-  &::before {
-    content: "";
-    position: absolute;
-    inset: 0 auto 0 0;
-    width: 5px;
-    background: linear-gradient(180deg, $accent-color 0%, $leaf 100%);
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    right: -90px;
-    top: -90px;
-    width: 260px;
-    height: 260px;
-    background: radial-gradient(circle, $accent-soft, transparent 68%);
-    border-radius: 50%;
-  }
-}
-
-.intro-kicker {
-  margin-bottom: 0.6em !important;
-  color: $accent-color;
-  font-size: 0.74em !important;
-  font-weight: 700;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-}
-
-.intro-lead {
-  max-width: 800px;
-  margin-bottom: 1.2em !important;
-  color: $ink-color;
-  font-family: $font-display;
-  font-size: 1.32em !important;
-  font-weight: 600;
-  line-height: 1.55;
-}
-
-.intro-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.7em;
-  position: relative;
-  z-index: 1;
-
-  .btn {
-    margin: 0;
-    padding: 0.65em 1.45em;
-    border-radius: 999px;
-    font-size: 0.85em;
-    font-weight: 600;
-    letter-spacing: 0.01em;
-    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, border-color 0.2s ease;
-  }
-
-  .btn--primary {
-    background: linear-gradient(135deg, #11707f 0%, $accent-hover 100%);
-    border: none;
-    box-shadow: 0 8px 20px -6px rgba(14, 100, 115, 0.55);
-
-    &:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 14px 26px -8px rgba(14, 100, 115, 0.6);
-    }
-  }
-
-  .btn--inverse {
-    background: #fff;
-    border: 1.5px solid $section-border;
-    color: $accent-color !important;
-
-    &:hover {
-      transform: translateY(-2px);
-      border-color: $accent-color;
-      box-shadow: 0 10px 20px -8px rgba(14, 100, 115, 0.35);
-    }
-  }
-}
-
-/* ==========================================================================
-   Highlight cards
-   ========================================================================== */
-
-.profile-highlights {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1.1em;
-  margin: 1.8em 0 2.2em;
-}
-
-.highlight-card {
-  position: relative;
-  min-height: 0;
-  padding: 1.4em 1.3em;
-  background: #fff;
-  border: 1px solid $section-border;
-  border-radius: 14px;
-  box-shadow: 0 10px 30px -18px rgba(24, 40, 48, 0.25);
-  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 1.3em;
-    right: 1.3em;
-    height: 3px;
-    border-radius: 0 0 3px 3px;
-    background: linear-gradient(90deg, $accent-color, $leaf);
-    opacity: 0;
-    transition: opacity 0.25s ease;
-  }
-
-  &:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 24px 44px -20px rgba(14, 100, 115, 0.4);
-    border-color: rgba(14, 100, 115, 0.35);
-
-    &::before {
-      opacity: 1;
-    }
-  }
-
-  strong {
-    display: block;
-    margin: 0.5em 0 0.45em;
-    color: $ink-color;
-    font-family: $font-display;
-    font-size: 1.08em;
-    line-height: 1.35;
-  }
-
-  p {
-    margin-bottom: 0 !important;
-    color: $muted-ink;
-    font-size: 0.9em !important;
-    line-height: 1.6;
-  }
-}
-
-.highlight-label {
-  display: inline-block;
-  padding: 0.25em 0.8em;
-  background: $accent-soft;
-  border-radius: 999px;
-  color: $accent-color;
-  font-size: 0.68em;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
-
-/* ==========================================================================
-   Timeline
-   ========================================================================== */
-
-.timeline {
-  margin: 1.4em 0 2em;
-  border-left: 2px solid $section-border;
-}
-
-.timeline-item {
-  display: grid;
-  grid-template-columns: 8.5em minmax(0, 1fr);
-  gap: 1.15em;
-  position: relative;
-  padding: 0 0 1.4em 1.4em;
-
-  &:last-child {
-    padding-bottom: 0.2em;
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    left: -7px;
-    top: 0.3em;
-    width: 12px;
-    height: 12px;
-    background: #fff;
-    border: 3px solid $accent-color;
-    border-radius: 50%;
-    transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
-  }
-
-  &:hover::before {
-    background: $accent-color;
-    transform: scale(1.2);
-    box-shadow: 0 0 0 5px $accent-soft;
-  }
-
-  strong {
-    color: $ink-color;
-    font-weight: 600;
-  }
-
-  p {
-    margin: 0.2em 0 0 !important;
-    color: $muted-ink;
-    font-size: 0.93em !important;
-  }
-}
-
-.timeline-date {
-  color: $accent-color;
-  font-size: 0.78em;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  padding-top: 0.2em;
-}
-
-/* ==========================================================================
-   Publication cards
-   ========================================================================== */
-
-.publication-list {
-  display: grid;
-  gap: 1.1em;
-  margin: 1.4em 0 1.8em;
-
-  article {
-    position: relative;
-    padding: 1.35em 1.5em;
-    background: #fff;
-    border: 1px solid $section-border;
-    border-radius: 14px;
-    box-shadow: 0 10px 30px -20px rgba(24, 40, 48, 0.3);
-    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
-
-    &:hover {
-      transform: translateY(-3px);
-      border-color: rgba(14, 100, 115, 0.35);
-      box-shadow: 0 22px 44px -22px rgba(14, 100, 115, 0.45);
-    }
-  }
-
-  .pub-tag {
-    display: inline-block;
-    margin-bottom: 0.7em;
-    padding: 0.28em 0.85em;
-    background: $accent-soft;
-    color: $accent-color;
-    font-size: 0.7em;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    border-radius: 999px;
-  }
-
-  h3 {
-    margin: 0 0 0.45em;
-    color: $ink-color;
-    font-family: $font-display;
-    font-size: 1.08em;
-    line-height: 1.45;
-  }
-
-  p {
-    margin: 0 0 0.7em !important;
-    color: $muted-ink;
-    font-size: 0.89em !important;
-    line-height: 1.6;
-  }
-
-  a {
-    font-size: 0.92em;
-    font-weight: 600;
-    text-decoration: none;
-
-    &::after {
-      content: " \2192";
-      display: inline-block;
-      transition: transform 0.2s ease;
-    }
-
-    &:hover::after {
-      transform: translateX(4px);
-    }
-  }
-}
-
-/* ==========================================================================
-   Sidebar / author profile — card style
-   ========================================================================== */
-
-.sidebar {
-  > div,
-  > .author__avatar,
-  > .author__content,
-  > .author__urls-wrapper {
-    text-align: left;
-  }
-}
-
-h3.author__name {
-  font-family: $font-display;
-}
-
-.author__avatar {
-  img {
-    max-width: 175px;
-    border-radius: 50%;
-    border: 4px solid #fff;
-    box-shadow: 0 14px 34px -12px rgba(11, 42, 54, 0.45);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-
-    &:hover {
-      transform: scale(1.03) rotate(-1deg);
-      box-shadow: 0 18px 40px -12px rgba(11, 42, 54, 0.55);
-    }
-  }
-}
-
-.author__name {
-  color: $ink-color !important;
-  font-weight: 700;
-  font-size: 1.2em;
+  color: $ink !important;
   letter-spacing: -0.01em;
 }
 
-.author__bio {
-  color: $muted-ink !important;
-  font-size: 0.92em;
-  line-height: 1.55;
-}
+.greedy-nav {
+  background: transparent;
 
-.author__urls {
-  li {
-    margin-bottom: 0.5em;
+  a {
+    color: $muted;
     font-size: 0.95em;
+    font-weight: 500;
+
+    &:hover { color: $theme; }
   }
+
+  .visible-links a:before { background: $theme; height: 2px; }
+  a.site-title:hover { color: $ink !important; }
+}
+
+/* ---- About page (al-folio) ---- */
+.al-about { margin-top: 1.5rem; }
+
+.al-profile {
+  float: right;
+  width: 270px;
+  max-width: 42%;
+  margin: 0.3rem 0 1.2rem 1.8rem;
+  text-align: center;
+}
+
+.al-photo {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 12px rgba(0, 0, 0, 0.10);
+}
+
+.al-more-info {
+  margin-top: 0.8rem;
+  color: $muted;
+  font-size: 0.85rem;
+  line-height: 1.5;
+
+  p { margin: 0 !important; }
+}
+
+.al-social {
+  margin-top: 0.7rem;
+  font-size: 1.35rem;
+  line-height: 1;
 
   a {
-    color: $muted-ink;
+    color: $muted;
+    margin: 0 0.28rem;
     text-decoration: none;
-    transition: color 0.2s ease;
+    transition: color 0.2s ease, transform 0.2s ease;
+    display: inline-block;
 
-    &:hover {
-      color: $accent-color;
-      text-decoration: none;
-    }
-  }
-
-  .fa, .fab, .fas, .ai {
-    color: $accent-color;
+    &:hover { color: $theme; transform: translateY(-2px); }
   }
 }
 
-/* ==========================================================================
-   Page title & archive list pages
-   ========================================================================== */
+.al-name {
+  margin: 0 0 0.1rem !important;
+  font-size: 2.6rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  color: $ink;
+}
 
-.page__title {
-  color: $ink-color !important;
+.al-desc {
+  margin: 0 0 1.4rem !important;
+  color: $muted;
+  font-size: 1.08rem;
+  font-weight: 500;
+}
+
+.al-lead {
+  font-size: 1.08rem !important;
+  line-height: 1.75;
+  color: $ink;
+}
+
+.al-about p {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: #333;
+}
+
+/* ---- Section headings ---- */
+.page__content {
+  font-size: 1rem;
+  line-height: 1.75;
+
+  a {
+    color: $theme;
+    text-decoration: none;
+    border-bottom: 1px dashed rgba(0, 118, 223, 0.5);
+    transition: border-color 0.2s ease, color 0.2s ease;
+
+    &:hover { color: $theme-hover; border-bottom-style: solid; }
+  }
+}
+
+.al-heading,
+.page__content h2 {
+  clear: both;
+  margin: 2.6rem 0 1.1rem !important;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid $divider;
+  color: $ink;
+  font-size: 1.5rem;
   font-weight: 700;
-  letter-spacing: -0.015em;
+  letter-spacing: -0.01em;
 }
 
-.archive__item {
-  padding: 0.2em 0;
+/* ---- News list ---- */
+.al-news {
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+
+  li {
+    display: flex;
+    gap: 1rem;
+    padding: 0.6rem 0;
+    border-bottom: 1px solid $divider;
+    font-size: 0.96rem;
+    color: $ink;
+    margin: 0 !important;
+  }
 }
 
-.archive__item-title {
-  font-family: $font-display;
-  margin-top: 0.2em;
-  font-size: 1.12em;
-  line-height: 1.45;
+.al-news-date {
+  flex: none;
+  width: 84px;
+  color: $theme;
+  font-weight: 600;
+  font-size: 0.85rem;
+  padding-top: 0.1rem;
+}
+
+/* ---- Bibliography (al-folio) ---- */
+.al-bib {
+  list-style: none !important;
+  counter-reset: none;
+  margin: 0 !important;
+  padding: 0 !important;
+
+  li {
+    display: flex;
+    gap: 1.1rem;
+    align-items: flex-start;
+    padding: 1rem 0;
+    border-bottom: 1px solid $divider;
+    margin: 0 !important;
+  }
+}
+
+.al-year {
+  flex: none;
+  width: 62px;
+  text-align: center;
+  padding: 0.22rem 0;
+  background: $badge-bg;
+  color: $theme;
+  font-size: 0.8rem;
+  font-weight: 700;
+  border-radius: 6px;
+}
+
+.al-entry {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.18rem;
+}
+
+.al-title {
+  font-weight: 700;
+  font-size: 1.02rem;
+  line-height: 1.4;
+  color: $ink;
+}
+
+.al-authors {
+  font-size: 0.9rem;
+  color: #555;
+
+  strong { color: $ink; }
+}
+
+.al-venue {
+  font-size: 0.88rem;
+  font-style: italic;
+  color: $muted;
+}
+
+.al-links {
+  margin-top: 0.3rem;
 
   a {
-    color: $ink-color;
+    display: inline-block;
+    margin-right: 0.4rem;
+    padding: 0.12rem 0.6rem;
+    border: 1px solid $theme;
+    border-radius: 5px;
+    color: $theme;
+    font-size: 0.78rem;
+    font-weight: 600;
     text-decoration: none;
-    transition: color 0.2s ease;
+    transition: background 0.18s ease, color 0.18s ease;
 
-    &:hover {
-      color: $accent-color;
-    }
+    &:hover { background: $theme; color: #fff; }
   }
+}
+
+.al-allpubs {
+  margin-top: 1rem !important;
+
+  a {
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: none !important;
+  }
+}
+
+/* ---- Publications / Talks / Teaching archive pages ---- */
+.page__title {
+  margin-bottom: 1.4rem;
+  color: $ink !important;
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.archive__subtitle {
+  margin-top: 2rem;
+  border-bottom: 1px solid $divider;
+  color: $muted;
+  font-size: 1.2rem;
 }
 
 .list__item {
-  margin-bottom: 1.2em;
-  padding: 1.25em 1.45em;
-  background: #fff;
-  border: 1px solid $section-border;
-  border-radius: 14px;
-  box-shadow: 0 10px 30px -20px rgba(24, 40, 48, 0.3);
-  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  margin: 0 !important;
+  padding: 1rem 0 !important;
+  border: none !important;
+  border-bottom: 1px solid $divider !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
 
-  &:hover {
-    transform: translateY(-3px);
-    border-color: rgba(14, 100, 115, 0.35);
-    box-shadow: 0 22px 44px -22px rgba(14, 100, 115, 0.45);
-  }
+  .archive__item-title {
+    margin: 0 0 0.2rem !important;
+    font-size: 1.05rem;
+    font-weight: 700;
+    line-height: 1.4;
 
-  .page__meta {
-    color: $muted-ink;
-  }
-
-  p {
-    color: $muted-ink;
-    font-size: 0.93em;
-  }
-}
-
-/* ==========================================================================
-   Footer
-   ========================================================================== */
-
-.page__footer {
-  margin-top: 4em;
-  padding: 2.4em 0;
-  background: #0b2a36;
-  border-top: none;
-  color: rgba(255, 255, 255, 0.75);
-
-  footer {
-    margin-top: 0;
-  }
-
-  a {
-    color: rgba(255, 255, 255, 0.9);
-
-    &:hover {
-      color: #fff;
+    a {
+      color: $ink;
+      text-decoration: none;
+      border-bottom: none;
+      &:hover { color: $theme; }
     }
   }
+
+  .page__meta,
+  p { color: $muted; font-size: 0.9rem; }
 }
 
-.page__footer-copyright {
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 0.8em;
+.archive__item-excerpt { color: #555 !important; }
+
+/* ---- Footer (minimal) ---- */
+.page__footer {
+  margin-top: 4rem;
+  padding: 1.6rem 0;
+  background: #fff;
+  border-top: 1px solid $divider;
+  color: $muted;
+
+  footer { max-width: 840px; margin: 0 auto; padding: 0 1.5em; }
+
+  a { color: $muted; &:hover { color: $theme; } }
 }
+
+.page__footer-copyright { color: $muted; font-size: 0.82em; }
 
 .page__footer-follow {
-  .social-icons {
-    a {
-      color: rgba(255, 255, 255, 0.85);
-      transition: transform 0.2s ease, color 0.2s ease;
-
-      &:hover {
-        color: #fff;
-        transform: translateY(-2px);
-      }
-    }
-
-    .fa, .fab, .fas {
-      color: rgba(255, 255, 255, 0.85);
-    }
-  }
+  .social-icons a:hover { color: $theme; }
+  a { color: $muted; }
 }
 
-/* ==========================================================================
-   Misc
-   ========================================================================== */
-
-.social-icons a {
-  transition: transform 0.2s ease, color 0.2s ease;
-
-  &:hover {
-    transform: translateY(-2px);
-  }
-}
-
-.notice {
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-}
-
-#main {
-  animation: fadeIn 0.5s ease-out;
-  padding-left: 2em;
-  padding-right: 2em;
-}
-
-::selection {
-  background: rgba(14, 100, 115, 0.18);
-}
-
-/* ==========================================================================
-   Responsive
-   ========================================================================== */
-
-@media (max-width: 900px) {
-  .profile-highlights {
-    grid-template-columns: 1fr;
-  }
-}
-
+/* ---- Responsive ---- */
 @media (max-width: 600px) {
-  .page__hero--overlay {
-    min-height: 230px;
-    padding: 3.2em 1.2em;
-
-    .page__title {
-      font-size: 1.9em;
-    }
-
-    .page__lead {
-      font-size: 1em;
-    }
+  .al-profile {
+    float: none;
+    width: 220px;
+    max-width: 70%;
+    margin: 0 auto 1.4rem;
   }
 
-  #main {
-    padding-left: 1em;
-    padding-right: 1em;
-  }
+  .al-name { font-size: 2.1rem; }
 
-  .intro-panel {
-    padding: 1.4em 1.2em;
-    border-radius: 14px;
-  }
+  .al-bib li,
+  .al-news li { gap: 0.7rem; }
 
-  .intro-lead {
-    font-size: 1.12em !important;
-  }
-
-  .timeline-item {
-    grid-template-columns: 1fr;
-    gap: 0.3em;
-  }
-
-  .intro-actions {
-    .btn {
-      width: 100%;
-      text-align: center;
-    }
-  }
+  .al-year { width: 54px; }
 }
 
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
