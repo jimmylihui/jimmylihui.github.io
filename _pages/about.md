@@ -92,10 +92,10 @@ My research interests include deep learning applications in time series, signal 
 
 <div class="publication-list">
   <article>
-    <span class="pub-tag">2026 · arXiv</span>
+    <span class="pub-tag">2026 · ACM IMWUT</span>
     <h3>Peak-Detector: Explainable Peak Detection via Instruction-Tuned Large Language Models in Physiological Signals</h3>
-    <p>J Li, Y Zhang, Z Zeng, J Chen, Y Song, Y Xiao, N Dong, J Lu, Y Kwon, F Dou. arXiv:2605.16452, 2026.</p>
-    <a href="https://arxiv.org/abs/2605.16452">Read the paper</a>
+    <p>J Li, Y Zhang, Z Zeng, J Chen, Y Song, Y Xiao, N Dong, J Lu, Y Kwon, F Dou. Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT), 2026.</p>
+    <a href="https://dl.acm.org/doi/10.1145/3810224">Read the paper</a>
   </article>
   <article>
     <span class="pub-tag">2026 · arXiv</span>
