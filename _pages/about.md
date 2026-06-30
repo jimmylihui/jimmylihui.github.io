@@ -12,7 +12,7 @@ redirect_from:
   <div class="al-profile">
     <img src="/images/profile.png" alt="Jiahui Li" class="al-photo">
     <div class="al-more-info">
-      <p>College of Engineering</p>
+      <p>School of Computing</p>
       <p>University of Georgia</p>
       <p>Athens, Georgia, USA</p>
     </div>
@@ -29,7 +29,7 @@ redirect_from:
   <h1 class="al-name">Jiahui Li</h1>
   <p class="al-desc">Ph.D. Student · Deep Learning for Time Series, Signal Processing &amp; Biomedical AI</p>
 
-  <p class="al-lead">I am a Ph.D. student in the College of Engineering at the University of Georgia, advised by Dr. Fei Dou. My research studies deep learning for time series, signal processing, and biomedical applications &mdash; with a particular interest in systems that connect machine learning research to everyday life.</p>
+  <p class="al-lead">I am a Ph.D. student in Computer Science at the University of Georgia, advised by Dr. Fei Dou. My research studies deep learning for time series, signal processing, and biomedical applications &mdash; with a particular interest in systems that connect machine learning research to everyday life.</p>
 
   <p>I work on practical AI problems spanning cardiomechanical and physiological signals, instruction-tuned large language models, time-series forecasting, and scientific discovery. Before UGA, I was a research assistant at the Hong Kong University of Science and Technology, and I hold an M.S. from University College London and a B.S. from the University of Liverpool.</p>
 
