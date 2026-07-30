@@ -1,16 +1,15 @@
 /* ==========================================================================
-   al-folio-style theme for Jiahui Li — single column, minimal, light
+   plusnli-style theme for Jiahui Li
+   Left author sidebar + thumbnail publication list (paper-box)
    ========================================================================== */
 
-$theme:        #0076df;
-$theme-hover:  #0056a8;
-$ink:          #1c1c1d;
-$muted:        #828282;
-$divider:      #e8e8e8;
-$badge-bg:     #eef4fb;
+$theme:        #2563eb;
+$theme-hover:  #1d4ed8;
+$ink:          #1f2328;
+$muted:        #6b7280;
+$divider:      #e6e8eb;
 $font-sans:    "Inter", -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
 
-/* ---- Base ---- */
 html { scroll-behavior: smooth; }
 
 body {
@@ -21,29 +20,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Single centered column — kill the Minimal Mistakes sidebar grid */
 #main {
-  max-width: 840px !important;
-  margin: 1.5rem auto 0 !important;
-  padding: 0 1.5rem !important;
+  max-width: 1100px;
   animation: fadeIn 0.4s ease-out;
 }
 
-.page,
-.archive {
-  float: none !important;
-  width: 100% !important;
-  padding: 0 !important;
-  margin: 0 !important;
-}
+::selection { background: rgba(37, 99, 235, 0.15); }
 
-.page__inner-wrap { margin: 0; }
-
-.sidebar { display: none !important; }
-
-::selection { background: rgba(0, 118, 223, 0.16); }
-
-/* ---- Masthead / nav (al-folio navbar) ---- */
+/* ---- Masthead / nav ---- */
 .masthead {
   position: sticky;
   top: 0;
@@ -55,323 +39,232 @@ body {
   box-shadow: none;
 }
 
-.masthead__inner-wrap {
-  max-width: 840px;
-  padding: 0.7em 1.5em;
+.greedy-nav {
+  background: transparent;
+
+  a:not(.site-title) {
+    color: $muted;
+    font-size: 0.95em;
+    font-weight: 500;
+    &:hover { color: $theme; }
+  }
+
+  .visible-links a:before { background: $theme; height: 2px; }
 }
 
 .greedy-nav a.site-title,
 .site-title {
   font-weight: 700;
-  font-size: 1.25em;
   color: $ink !important;
   letter-spacing: -0.01em;
 }
 
-.greedy-nav {
-  background: transparent;
+/* ---- Author sidebar ---- */
+.sidebar {
+  .author__avatar {
+    display: block;
+    text-align: center;
 
-  a {
-    color: $muted;
-    font-size: 0.95em;
-    font-weight: 500;
-
-    &:hover { color: $theme; }
-  }
-
-  .visible-links a:before { background: $theme; height: 2px; }
-  a.site-title:hover { color: $ink !important; }
-}
-
-/* ---- About page (al-folio) ---- */
-.al-about { margin-top: 1.5rem; }
-
-.al-profile {
-  float: right;
-  width: 270px;
-  max-width: 42%;
-  margin: 0.3rem 0 1.2rem 1.8rem;
-  text-align: center;
-}
-
-.al-photo {
-  width: 100%;
-  border-radius: 8px;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 12px rgba(0, 0, 0, 0.10);
-}
-
-.al-more-info {
-  margin-top: 0.8rem;
-  color: $muted;
-  font-size: 0.85rem;
-  line-height: 1.5;
-
-  p { margin: 0 !important; }
-}
-
-.al-social {
-  margin-top: 0.7rem;
-  font-size: 1.35rem;
-  line-height: 1;
-
-  a {
-    color: $muted;
-    margin: 0 0.28rem;
-    text-decoration: none;
-    transition: color 0.2s ease, transform 0.2s ease;
-    display: inline-block;
-
-    &:hover { color: $theme; transform: translateY(-2px); }
-  }
-}
-
-.al-name {
-  margin: 0 0 0.1rem !important;
-  font-size: 2.6rem;
-  font-weight: 800;
-  letter-spacing: -0.02em;
-  line-height: 1.1;
-  color: $ink;
-}
-
-.al-desc {
-  margin: 0 0 1.4rem !important;
-  color: $muted;
-  font-size: 1.08rem;
-  font-weight: 500;
-}
-
-.al-lead {
-  font-size: 1.08rem !important;
-  line-height: 1.75;
-  color: $ink;
-}
-
-.al-about p {
-  font-size: 1rem;
-  line-height: 1.75;
-  color: #333;
-}
-
-/* ---- Section headings ---- */
-.page__content {
-  font-size: 1rem;
-  line-height: 1.75;
-
-  a {
-    color: $theme;
-    text-decoration: none;
-    border-bottom: 1px dashed rgba(0, 118, 223, 0.5);
-    transition: border-color 0.2s ease, color 0.2s ease;
-
-    &:hover { color: $theme-hover; border-bottom-style: solid; }
-  }
-}
-
-.al-heading,
-.page__content h2 {
-  clear: both;
-  margin: 2.6rem 0 1.1rem !important;
-  padding-bottom: 0.4rem;
-  border-bottom: 1px solid $divider;
-  color: $ink;
-  font-size: 1.5rem;
-  font-weight: 700;
-  letter-spacing: -0.01em;
-}
-
-/* ---- News list ---- */
-.al-news {
-  list-style: none !important;
-  margin: 0 !important;
-  padding: 0 !important;
-
-  li {
-    display: flex;
-    gap: 1rem;
-    padding: 0.6rem 0;
-    border-bottom: 1px solid $divider;
-    font-size: 0.96rem;
-    color: $ink;
-    margin: 0 !important;
-  }
-}
-
-.al-news-date {
-  flex: none;
-  width: 84px;
-  color: $theme;
-  font-weight: 600;
-  font-size: 0.85rem;
-  padding-top: 0.1rem;
-}
-
-/* ---- Bibliography (al-folio) ---- */
-.al-bib {
-  list-style: none !important;
-  counter-reset: none;
-  margin: 0 !important;
-  padding: 0 !important;
-
-  li {
-    display: flex;
-    gap: 1.1rem;
-    align-items: flex-start;
-    padding: 1rem 0;
-    border-bottom: 1px solid $divider;
-    margin: 0 !important;
-  }
-}
-
-.al-year {
-  flex: none;
-  width: 62px;
-  text-align: center;
-  padding: 0.22rem 0;
-  background: $badge-bg;
-  color: $theme;
-  font-size: 0.8rem;
-  font-weight: 700;
-  border-radius: 6px;
-}
-
-.al-entry {
-  flex: 1;
-  min-width: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 0.18rem;
-}
-
-.al-title {
-  font-weight: 700;
-  font-size: 1.02rem;
-  line-height: 1.4;
-  color: $ink;
-}
-
-.al-authors {
-  font-size: 0.9rem;
-  color: #555;
-
-  strong { color: $ink; }
-}
-
-.al-venue {
-  font-size: 0.88rem;
-  font-style: italic;
-  color: $muted;
-}
-
-.al-links {
-  margin-top: 0.3rem;
-
-  a {
-    display: inline-block;
-    margin-right: 0.4rem;
-    padding: 0.12rem 0.6rem;
-    border: 1px solid $theme;
-    border-radius: 5px;
-    color: $theme;
-    font-size: 0.78rem;
-    font-weight: 600;
-    text-decoration: none;
-    transition: background 0.18s ease, color 0.18s ease;
-
-    &:hover { background: $theme; color: #fff; }
-  }
-}
-
-.al-allpubs {
-  margin-top: 1rem !important;
-
-  a {
-    font-weight: 600;
-    text-decoration: none;
-    border-bottom: none !important;
-  }
-}
-
-/* ---- Publications / Talks / Teaching archive pages ---- */
-.page__title {
-  margin-bottom: 1.4rem;
-  color: $ink !important;
-  font-size: 2rem;
-  font-weight: 800;
-  letter-spacing: -0.02em;
-}
-
-.archive__subtitle {
-  margin-top: 2rem;
-  border-bottom: 1px solid $divider;
-  color: $muted;
-  font-size: 1.2rem;
-}
-
-.list__item {
-  margin: 0 !important;
-  padding: 1rem 0 !important;
-  border: none !important;
-  border-bottom: 1px solid $divider !important;
-  border-radius: 0 !important;
-  background: transparent !important;
-  box-shadow: none !important;
-
-  .archive__item-title {
-    margin: 0 0 0.2rem !important;
-    font-size: 1.05rem;
-    font-weight: 700;
-    line-height: 1.4;
-
-    a {
-      color: $ink;
-      text-decoration: none;
-      border-bottom: none;
-      &:hover { color: $theme; }
+    img {
+      width: 200px;
+      max-width: 70%;
+      border-radius: 50%;
+      border: 4px solid #fff;
+      box-shadow: 0 6px 20px rgba(31, 35, 40, 0.16);
     }
   }
 
-  .page__meta,
-  p { color: $muted; font-size: 0.9rem; }
+  .author__content { text-align: center; }
+
+  .author__name {
+    margin: 0.7rem 0 0.2rem;
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: $ink;
+  }
+
+  .author__bio {
+    color: $muted;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
 }
 
-.archive__item-excerpt { color: #555 !important; }
+.author__urls-wrapper {
+  .btn--inverse {
+    display: inline-block;
+    margin: 0.3rem 0 0.8rem;
+    background: #fff;
+    border: 1px solid $divider;
+    border-radius: 8px;
+    color: $theme;
+    font-weight: 600;
+    box-shadow: none;
+    transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
 
-/* ---- Footer (minimal) ---- */
+    &:hover { background: $theme; border-color: $theme; color: #fff; }
+  }
+}
+
+.author__urls {
+  li { margin-bottom: 0.35rem; }
+
+  a {
+    color: $ink;
+    text-decoration: none;
+    &:hover { color: $theme; text-decoration: none; }
+  }
+
+  .fa, .fab, .fas, .ai { color: $theme; }
+}
+
+/* ---- Content typography ---- */
+.page__title {
+  margin-bottom: 1.2rem;
+  color: $ink !important;
+  font-size: 1.9rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.page__content {
+  font-size: 1.02rem;
+  line-height: 1.7;
+
+  h2 {
+    margin: 2rem 0 1rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid $divider;
+    color: $ink;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+
+  h3 {
+    margin-top: 1.4rem;
+    font-size: 1.12rem;
+    font-weight: 700;
+    color: $ink;
+  }
+
+  a {
+    color: $theme;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(37, 99, 235, 0.35);
+    transition: color 0.2s ease, border-color 0.2s ease;
+    &:hover { color: $theme-hover; border-bottom-color: $theme-hover; }
+  }
+
+  strong { color: $ink; font-weight: 700; }
+}
+
+/* ---- paper-box (thumbnail publication list) ---- */
+.paper-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 1.1em 0;
+  border-bottom: 1px solid $divider;
+}
+
+.paper-box .paper-box-text {
+  order: 1;
+  width: 100%;
+  max-width: 100%;
+}
+
+.paper-box .paper-box-image {
+  order: 2;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.paper-box .paper-box-image img {
+  max-width: 360px;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 3px 8px rgba(31, 35, 40, 0.18);
+  object-fit: contain;
+  border-radius: 6px;
+}
+
+.paper-box .paper-box-text h3 {
+  margin: 0 0 0.35em;
+  font-size: 1.06rem;
+  line-height: 1.3;
+  color: $ink;
+}
+
+.paper-box .paper-box-text p {
+  margin-bottom: 0.4em;
+  font-size: 0.92rem;
+  line-height: 1.5;
+  color: #444;
+}
+
+.paper-box .paper-box-text a {
+  font-weight: 600;
+  border-bottom: none;
+}
+
+@media screen and (min-width: 768px) {
+  .paper-box {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .paper-box .paper-box-image {
+    order: 1;
+    flex: 0 0 220px;
+    max-width: 220px;
+    min-width: 220px;
+    justify-content: flex-start;
+  }
+
+  .paper-box .paper-box-image img {
+    max-height: 132px;
+    object-position: center;
+  }
+
+  .paper-box .paper-box-text {
+    order: 2;
+    flex: 1;
+    min-width: 0;
+    padding-left: 0.5em;
+  }
+}
+
+/* ---- Publications / Talks archive pages ---- */
+.archive__item-title {
+  margin-top: 0.2rem;
+  font-size: 1.06rem;
+  font-weight: 700;
+
+  a { color: $ink; text-decoration: none; &:hover { color: $theme; } }
+}
+
+.list__item {
+  padding: 0.9rem 0;
+  border-bottom: 1px solid $divider;
+
+  .page__meta, p { color: $muted; font-size: 0.9rem; }
+}
+
+/* ---- Footer ---- */
 .page__footer {
-  margin-top: 4rem;
-  padding: 1.6rem 0;
-  background: #fff;
+  margin-top: 3rem;
+  background: #fafafa;
   border-top: 1px solid $divider;
   color: $muted;
 
-  footer { max-width: 840px; margin: 0 auto; padding: 0 1.5em; }
-
   a { color: $muted; &:hover { color: $theme; } }
-}
-
-.page__footer-copyright { color: $muted; font-size: 0.82em; }
-
-.page__footer-follow {
+  .page__footer-copyright { font-size: 0.82em; }
   .social-icons a:hover { color: $theme; }
-  a { color: $muted; }
-}
-
-/* ---- Responsive ---- */
-@media (max-width: 600px) {
-  .al-profile {
-    float: none;
-    width: 220px;
-    max-width: 70%;
-    margin: 0 auto 1.4rem;
-  }
-
-  .al-name { font-size: 2.1rem; }
-
-  .al-bib li,
-  .al-news li { gap: 0.7rem; }
-
-  .al-year { width: 54px; }
 }
 
 @keyframes fadeIn {
