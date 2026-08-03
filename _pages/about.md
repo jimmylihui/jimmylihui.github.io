@@ -30,7 +30,7 @@ My research interests lie in mobile and wearable sensing, human-centered AI, and
 
 <div class='paper-box'>
 <div class='paper-box-image'><div>
-  <img src='images/papers/earlydx.svg' alt="sym" width="78%">
+  <img src='images/papers/earlydx.png' alt="sym" width="78%">
 </div></div>
 
 <div class='paper-box-text' markdown="1">
@@ -45,7 +45,7 @@ My research interests lie in mobile and wearable sensing, human-centered AI, and
 
 <div class='paper-box'>
 <div class='paper-box-image'><div>
-  <img src='images/papers/peak-detector.svg' alt="sym" width="78%">
+  <img src='images/papers/peak-detector.png' alt="sym" width="78%">
 </div></div>
 
 <div class='paper-box-text' markdown="1">
@@ -60,7 +60,7 @@ My research interests lie in mobile and wearable sensing, human-centered AI, and
 
 <div class='paper-box'>
 <div class='paper-box-image'><div>
-  <img src='images/papers/deeparrhythmia.svg' alt="sym" width="78%">
+  <img src='images/papers/deeparrhythmia.png' alt="sym" width="78%">
 </div></div>
 
 <div class='paper-box-text' markdown="1">
@@ -75,7 +75,7 @@ My research interests lie in mobile and wearable sensing, human-centered AI, and
 
 <div class='paper-box'>
 <div class='paper-box-image'><div>
-  <img src='images/papers/adlgen.svg' alt="sym" width="78%">
+  <img src='images/papers/adlgen.png' alt="sym" width="78%">
 </div></div>
 
 <div class='paper-box-text' markdown="1">
@@ -120,7 +120,7 @@ Haoran Lu, Luyang Fang, Ruidong Zhang, et al.<br>
 
 <div class='paper-box'>
 <div class='paper-box-image'><div>
-  <img src='images/papers/genbench.svg' alt="sym" width="78%">
+  <img src='images/papers/genbench.png' alt="sym" width="78%">
 </div></div>
 
 <div class='paper-box-text' markdown="1">
