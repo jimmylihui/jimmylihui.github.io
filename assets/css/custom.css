@@ -1,0 +1,132 @@
+/* 重置并重新定义 paper-box 样式 - 平衡版本 */
+.paper-box {
+  display: flex !important;
+  flex-direction: column;       /* 默认移动端：垂直排列 */
+  align-items: flex-start;
+  gap: 8px;                     /* 恢复适中间距：6px -> 8px */
+  padding: 1.1em 0 1.1em 0;     /* 紧凑内边距 */
+  flex-wrap: nowrap;            /* 防止换行 */
+}
+
+/* 移动端样式：文本在上，图片在下 */
+.paper-box .paper-box-text {
+  order: 1;                     /* 文本优先显示 */
+  width: 100%;
+  max-width: 100%;
+  padding-left: 0;
+  margin-left: 0;
+  margin-bottom: 6px;           /* 适中的文本和图片间距 */
+}
+
+.paper-box .paper-box-image {
+  order: 2;                     /* 图片在后 */
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-right: 0;
+}
+
+.paper-box .paper-box-image img {
+  max-width: 360px;             /* 适当增大移动端图片：320px -> 360px */
+  width: 100%;
+  height: auto;                 /* 高度自适应，保持原始比例 */
+  box-shadow: 2px 3px 5px #8a8a8a; /* 适中阴影：介于轻重之间 */
+  object-fit: contain;          /* 完整显示图片，不裁剪 */
+  border-radius: 5px;           /* 适中圆角：4px -> 5px（原版6px） */
+}
+
+/* 中等屏幕及以上：图片在左，文本在右 - 平衡版本 */
+@media screen and (min-width: 768px) {
+  .paper-box {
+      flex-direction: row !important;    /* 水平排列 */
+      align-items: flex-start;
+      gap: 12px;                         /* 适中间距：10px -> 12px */
+  }
+  
+  .paper-box .paper-box-image {
+      order: 1;                          /* 图片在左 */
+      flex: 0 0 220px;                   /* 固定列宽，紧凑 */
+      max-width: 220px;
+      min-width: 220px;
+      justify-content: flex-start;
+      margin-right: 0;
+  }
+
+  .paper-box .paper-box-image img {
+      width: 100%;                       /* 填满列宽 */
+      max-width: 100%;
+      height: auto;                      /* 保持原始比例 */
+      max-height: 130px;                 /* 高度上限，控制在一个范围内 */
+      object-fit: contain;               /* 不裁剪不变形 */
+      object-position: center;
+      box-shadow: 2px 3px 5px #8a8a8a;   /* 阴影贴着图片 */
+      border-radius: 5px;
+  }
+  
+  .paper-box .paper-box-text {
+      order: 2;                          /* 文本在右 */
+      flex: 1;                           /* 占剩余空间 */
+      max-width: 67%;                    /* 相应调整：69% -> 67% */
+      padding-left: 1em;                 /* 适中左侧间距：0.8em -> 1em（原版1.28em） */
+      margin-left: 0;
+      margin-bottom: 0;
+  }
+}
+
+/* 大屏幕进一步优化 */
+@media screen and (min-width: 1200px) {
+  .paper-box .paper-box-image {
+      flex: 0 0 240px;                   /* 大屏幕略增列宽 */
+      width: 240px;
+      min-width: 240px;
+      max-width: 240px;
+  }
+
+  .paper-box .paper-box-image img {
+      max-height: 140px;                 /* 大屏高度上限 */
+  }
+
+  .paper-box .paper-box-text {
+      padding-left: 24px;                /* 大屏幕稍微增加间距 */
+  }
+}
+
+/* 优化标题和内容间距 - 平衡版本 */
+.paper-box .paper-box-text h3,
+.paper-box .paper-box-text h4 {
+  margin-top: 0;
+  margin-bottom: 0.4em;               /* 适中标题下边距：0.3em -> 0.4em */
+  line-height: 1.25;                  /* 适中行高：1.2 -> 1.25 */
+}
+
+.paper-box .paper-box-text p {
+  margin-bottom: 0.5em;               /* 恢复标准段落间距：0.4em -> 0.5em */
+  line-height: 1.45;                  /* 适中行高：1.4 -> 1.45 */
+}
+
+/* 优化 details 标签的间距 */
+.paper-box .paper-box-text details {
+  margin-top: 0.4em;                  /* 稍微增加间距 */
+  margin-bottom: 0.3em;
+}
+
+.paper-box .paper-box-text details summary {
+  cursor: pointer;
+  font-weight: 500;
+  margin-bottom: 0.3em;               /* 适中间距 */
+}
+
+/* 优化 badge 样式 - 平衡版本 */
+.badge {
+  padding: 0.25em 0.7em;              /* 适中内边距：0.2em 0.6em -> 0.25em 0.7em */
+  font-size: 0.78em;                  /* 适中字体：0.75em -> 0.78em */
+  margin-top: 0.4em;                  /* 适中上边距：0.3em -> 0.4em */
+  margin-left: -0.4em;                /* 适中左边距：-0.3em -> -0.4em */
+}
+
+/* 图片尺寸统一规则 - 确保所有图片宽度一致 */
+.paper-box .paper-box-image {
+  display: flex;
+  align-items: flex-start;            /* 图片顶部对齐 */
+}

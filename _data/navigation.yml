@@ -1,7 +1,16 @@
-# main links
+# main links links
 main:
-  - title: "About"
-    url: /
+  - title: "About Me"
+    url: "/#about-me"
+
   - title: "Publications"
-    url: /publications/
-    
+    url: "/#-selected-publications"
+
+  - title: "Education"
+    url: "/#-education"
+
+  - title: "Experiences"
+    url: "/#-experiences"
+
+  - title: "Google Scholar"
+    url: "https://scholar.google.com/citations?user=CGnz6VQAAAAJ&hl=en"
