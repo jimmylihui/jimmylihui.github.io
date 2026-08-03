@@ -14,6 +14,8 @@ Ph.D. Student, School of Computing, University of Georgia<br>
 Athens, Georgia, USA · [jl57095@uga.edu](mailto:jl57095@uga.edu)<br>
 [Google Scholar](https://scholar.google.com/citations?user=CGnz6VQAAAAJ&hl=en) · [GitHub](https://github.com/jimmylihui) · [LinkedIn](https://www.linkedin.com/in/jiahui-li-942200254)
 
+📄 [**Download this CV as PDF**](/files/CV_Jiahui_Li.pdf)
+
 
 # 🔬 Research Interests
 

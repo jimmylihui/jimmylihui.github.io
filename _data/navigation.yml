@@ -6,6 +6,9 @@ main:
   - title: "CV"
     url: "/cv/"
 
+  - title: "CV (PDF)"
+    url: "/files/CV_Jiahui_Li.pdf"
+
   - title: "Publications"
     url: "/#-selected-publications"
 

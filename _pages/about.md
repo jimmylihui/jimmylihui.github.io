@@ -23,6 +23,8 @@ My research interests lie in mobile and wearable sensing, human-centered AI, and
 
 <span style="color:red">I am always open to research collaborations — feel free to reach out!</span>
 
+📄 [**Download my CV (PDF)**](/files/CV_Jiahui_Li.pdf) &nbsp;·&nbsp; [View CV online](/cv/)
+
 
 # 📝 Selected Publications
 
