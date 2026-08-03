@@ -90,7 +90,7 @@ Weihang You, Hanqi Jiang, **Jiahui Li**, Zishuai Liu, Tianming Liu, Jin Lu, Fei 
 
 <div class='paper-box'>
 <div class='paper-box-image'><div>
-  <img src='images/papers/peak-r1.svg' alt="sym" width="78%">
+  <img src='images/papers/peak-r1.png' alt="sym" width="78%">
 </div></div>
 
 <div class='paper-box-text' markdown="1">
@@ -105,7 +105,7 @@ Weihang You, Hanqi Jiang, **Jiahui Li**, Zishuai Liu, Tianming Liu, Jin Lu, Fei 
 
 <div class='paper-box'>
 <div class='paper-box-image'><div>
-  <img src='images/papers/alignment.svg' alt="sym" width="78%">
+  <img src='images/papers/alignment.png' alt="sym" width="78%">
 </div></div>
 
 <div class='paper-box-text' markdown="1">
