@@ -80,7 +80,7 @@ My research interests lie in mobile and wearable sensing, human-centered AI, and
 
 [ADLGen: Synthesizing Symbolic, Event-Triggered Sensor Sequences for Smart-Home Human Activity Modeling](https://dl.acm.org/doi/10.1145/3774906.3802796)<br>
 Weihang You, Hanqi Jiang, **Jiahui Li**, Zishuai Liu, Tianming Liu, Jin Lu, Fei Dou<br>
-*Proceedings of the 2026 ACM/IEEE International Conference on Embedded Artificial Intelligence and Sensing Systems (EAISS 2026)*. [[paper](https://dl.acm.org/doi/10.1145/3774906.3802796)]
+*ACM SenSys 2026 (Proceedings of the 2026 ACM/IEEE International Conference on Embedded Artificial Intelligence and Sensing Systems)*. [[paper](https://dl.acm.org/doi/10.1145/3774906.3802796)]
 
 </div>
 </div>
@@ -132,11 +132,11 @@ Zicheng Liu, **Jiahui Li**, Siyuan Li, Zelin Zang, Cheng Tan, Yufei Huang, Yajin
 
 
 # 📖 Education
-- *2024.08 - current*, University of Georgia, Ph.D. in Computer Science. Advisor: Dr. Fei Dou.
-- *2021.09 - 2022.09*, University College London, M.S. in Scientific and Data-intensive Computing.
-- *2018.09 - 2021.06*, University of Liverpool, B.S. in Computer Science and Engineering.
+- *2024 - current*, University of Georgia, Ph.D. in Computer Science. Advisor: Dr. Fei Dou.
+- *2021 - 2022*, University College London, M.S. in Scientific and Data-intensive Computing.
+- *2017 - 2021*, University of Liverpool / Xi'an Jiaotong-Liverpool University, B.S. in Computer Science and Engineering.
 
 
 # 💼 Experiences
-- *2024.08 - current*, Ph.D. Student, University of Georgia. Advisor: Dr. Fei Dou.
-- *2023.09 - 2024.06*, Research Assistant, Hong Kong University of Science and Technology. Advisor: Prof. Dit-Yan Yeung.
+- *2024 - current*, Ph.D. Student, University of Georgia. Advisor: Dr. Fei Dou.
+- *2023 - 2024*, Research Assistant, Hong Kong University of Science and Technology. Advisor: Prof. Dit-Yan Yeung.
