@@ -17,9 +17,9 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-Hi there👋I am Jiahui Li, a Ph.D. student in Computer Science at the University of Georgia, advised by Dr. Fei Dou. I obtained my M.S. in Scientific and Data-intensive Computing from University College London and my B.S. in Computer Science and Engineering from the University of Liverpool.
+Hi there👋I am Jiahui Li, a Ph.D. student in Computer Science at the University of Georgia, supervised by Dr. Fei Dou. I obtained my M.Sc. in Scientific and Data-Intensive Computing from University College London and my B.Sc. in Computer Science and Engineering from the University of Liverpool.
 
-My research interests lie in mobile and wearable sensing, human-centered AI, and healthcare applications, with a focus on deep learning for physiological time series and signal processing. Previously, I was a research assistant at the Hong Kong University of Science and Technology, working with Prof. Dit-Yan Yeung.
+My research focuses on **evidence-grounded and explainable artificial intelligence for clinical diagnosis and health sensing**, including multimodal clinical reasoning, physiological time-series modeling, and trustworthy evaluation. My work spans electrocardiography (ECG), photoplethysmography (PPG), ballistocardiography (BCG), bodyseismography (BSG), vision-language models, and instruction-tuned large language models. Previously, I was a research assistant at the Hong Kong University of Science and Technology, working with Prof. Dit-Yan Yeung.
 
 <span style="color:red">I am always open to research collaborations — feel free to reach out!</span>
 
@@ -28,16 +28,18 @@ My research interests lie in mobile and wearable sensing, human-centered AI, and
 
 # 📝 Selected Publications
 
+<small>∗ equal contribution, † corresponding author. Author names in <strong>bold</strong> indicate myself.</small>
+
 <div class='paper-box'>
 <div class='paper-box-image'><div>
-  <img src='images/papers/earlydx.png' alt="sym" width="78%">
+  <img src='images/papers/deeparrhythmia.png' alt="sym" width="78%">
 </div></div>
 
 <div class='paper-box-text' markdown="1">
 
-[EarlyDx: An Admission-Anchored Benchmark for Open-Ended Generation of Evidence-Supported ED-Encounter Diagnoses](https://arxiv.org/abs/2607.28788)<br>
-**Jiahui Li**, Ruili Fang, Zishuai Liu, Yutong Guo, Nan Yang, Wenzhan Song, Jin Lu, Fei Dou<br>
-*Preprint*. [[pdf](https://arxiv.org/pdf/2607.28788)]
+[DeepArrhythmia: Segment-Contextualized ECG Arrhythmia Classification via Selective Evidence Acquisition](https://arxiv.org/abs/2605.16441)<br>
+**Jiahui Li**, Ruili Fang, Zishuai Liu, Wenzhan Song, Jin Lu, Fei Dou†<br>
+*<span style="color:#c0392b">NeurIPS 2026</span>* (CORE A*/CSRankings). [[pdf](https://arxiv.org/pdf/2605.16441)]
 
 </div>
 </div>
@@ -50,24 +52,9 @@ My research interests lie in mobile and wearable sensing, human-centered AI, and
 
 <div class='paper-box-text' markdown="1">
 
-[Peak-Detector: Explainable Peak Detection via Instruction-Tuned Large Language Models in Physiological Signals](https://dl.acm.org/doi/10.1145/3810224)<br>
-**Jiahui Li**, Yida Zhang, Zixuan Zeng, Jiayu Chen, Yingjian Song, Yin Xiao, Nishan Dong, Junjie Lu, Younghoon Kwon, Xiang Zhang, Jin Lu, Wenzhan Song, Fei Dou<br>
-*Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT), 2026*. [[paper](https://dl.acm.org/doi/10.1145/3810224)] [[arXiv](https://arxiv.org/abs/2605.16452)]
-
-</div>
-</div>
-
-
-<div class='paper-box'>
-<div class='paper-box-image'><div>
-  <img src='images/papers/deeparrhythmia.png' alt="sym" width="78%">
-</div></div>
-
-<div class='paper-box-text' markdown="1">
-
-[DeepArrhythmia: Segment-Contextualized ECG Arrhythmia Classification via Selective Evidence Acquisition](https://arxiv.org/abs/2605.16441)<br>
-**Jiahui Li**, Ruili Fang, Zishuai Liu, WenZhan Song, Jin Lu, Fei Dou<br>
-*Preprint*. [[pdf](https://arxiv.org/pdf/2605.16441)]
+[Peak-Detector: Explainable Peak Detection via Instruction-Tuned Large Language Models in Physiological Signal](https://dl.acm.org/doi/10.1145/3810224)<br>
+**Jiahui Li**, Yida Zhang, Zixuan Zeng, Jiayu Chen, Yingjian Song, Yin Xiao, Nishan Dong, Junjie Lu, Younghoon Kwon, Xiang Zhang, Jin Lu, Wenzhan Song, Fei Dou†<br>
+*ACM IMWUT (UbiComp) 2026* (CSRankings). [[paper](https://dl.acm.org/doi/10.1145/3810224)] [[arXiv](https://arxiv.org/abs/2605.16452)]
 
 </div>
 </div>
@@ -81,8 +68,23 @@ My research interests lie in mobile and wearable sensing, human-centered AI, and
 <div class='paper-box-text' markdown="1">
 
 [ADLGen: Synthesizing Symbolic, Event-Triggered Sensor Sequences for Smart-Home Human Activity Modeling](https://dl.acm.org/doi/10.1145/3774906.3802796)<br>
-Weihang You, Hanqi Jiang, **Jiahui Li**, Zishuai Liu, Tianming Liu, Jin Lu, Fei Dou<br>
-*ACM SenSys 2026 (Proceedings of the 2026 ACM/IEEE International Conference on Embedded Artificial Intelligence and Sensing Systems)*. [[paper](https://dl.acm.org/doi/10.1145/3774906.3802796)]
+Weihang You∗, Hanqi Jiang∗, **Jiahui Li**∗ <em>(co-first author)</em>, Zishuai Liu∗, Tianming Liu, Jin Lu, Fei Dou†<br>
+*ACM SenSys 2026* (CORE A*/CSRankings). [[paper](https://dl.acm.org/doi/10.1145/3774906.3802796)]
+
+</div>
+</div>
+
+
+<div class='paper-box'>
+<div class='paper-box-image'><div>
+  <img src='images/papers/earlydx.png' alt="sym" width="78%">
+</div></div>
+
+<div class='paper-box-text' markdown="1">
+
+[EarlyDx: An Admission-Anchored Benchmark for Open-Ended Generation of Evidence-Supported ED-Encounter Diagnoses](https://arxiv.org/abs/2607.28788)<br>
+**Jiahui Li**, Ruili Fang, Zishuai Liu, Yutong Guo, Nan Yang, Wenzhan Song, Jin Lu, Fei Dou†<br>
+*Under review at KDD 2027*. [[pdf](https://arxiv.org/pdf/2607.28788)]
 
 </div>
 </div>
@@ -95,9 +97,9 @@ Weihang You, Hanqi Jiang, **Jiahui Li**, Zishuai Liu, Tianming Liu, Jin Lu, Fei 
 
 <div class='paper-box-text' markdown="1">
 
-[Peak-R1: Instruction-Tuned Large Language Models for Robust J-Peak Detection in Cardiomechanical Signals](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=CGnz6VQAAAAJ&citation_for_view=CGnz6VQAAAAJ:9yKSN-GCB0IC)<br>
-**Jiahui Li**, Yida Zhang, Zixuan Zeng, Jiayu Chen, Xiang Zhang, Jin Lu, WenZhan Song, Fei Dou<br>
-*NeurIPS 2025 Workshop on Learning from Time Series for Health*.
+[Peak-R1: Instruction-Tuned Large Language Models for Robust J-Peak Detection](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=CGnz6VQAAAAJ&citation_for_view=CGnz6VQAAAAJ:9yKSN-GCB0IC)<br>
+**Jiahui Li**, Yida Zhang, Zixuan Zeng, Jiayu Chen, Xiang Zhang, Jin Lu, Wenzhan Song, Fei Dou†<br>
+*Learning from Time Series for Health Workshop @ NeurIPS 2025*.
 
 </div>
 </div>
@@ -111,8 +113,8 @@ Weihang You, Hanqi Jiang, **Jiahui Li**, Zishuai Liu, Tianming Liu, Jin Lu, Fei 
 <div class='paper-box-text' markdown="1">
 
 [Alignment and Safety in Large Language Models: Safety Mechanisms, Training Paradigms, and Emerging Challenges](https://arxiv.org/abs/2507.19672)<br>
-Haoran Lu, Luyang Fang, Ruidong Zhang, et al.<br>
-*Preprint*. [[pdf](https://arxiv.org/pdf/2507.19672)]
+Haoran Lu, Luyang Fang, Ruidong Zhang, and others, including **Jiahui Li**<br>
+*Preprint*, 2025. [[pdf](https://arxiv.org/pdf/2507.19672)]
 
 </div>
 </div>
@@ -127,18 +129,41 @@ Haoran Lu, Luyang Fang, Ruidong Zhang, et al.<br>
 
 [GenBench: A Benchmarking Suite for Systematic Evaluation of Genomic Foundation Models](https://arxiv.org/abs/2406.01627)<br>
 Zicheng Liu, **Jiahui Li**, Siyuan Li, Zelin Zang, Cheng Tan, Yufei Huang, Yajing Bai, Stan Z. Li<br>
-*Preprint*. [[pdf](https://arxiv.org/pdf/2406.01627)]
+*Preprint*, 2024. [[pdf](https://arxiv.org/pdf/2406.01627)]
 
 </div>
 </div>
+
+
+# 📚 Other Publications
+
+**First-author papers under review**
+
+- **Jiahui Li**, Yutong Guo, Nan Yang, Wenzhan Song, Jin Lu, Fei Dou&dagger;. "DynamicDx: Evaluating Perception and Evidence Acquisition in Video-Grounded Conversational Diagnosis." *Under review at ICLR 2027*.
+- **Jiahui Li**, Yuanyuan Zhang, Yida Zhang, Zixuan Zeng, Jiayu Chen, Yingjian Song, Yin Xiao, Nishan Dong, Junjie Lu, Xiang Zhang, Jin Lu, Wenzhan Song, Fei Dou&dagger;. "BEACON-BP: A Feasibility Study of Bed-Frame Geophone Sensing for Contactless Blood Pressure Estimation with Arterial-Line Reference." *Under review at IMWUT 2026*.
+
+**Collaborative papers**
+
+- Yuyan Wu, Yuanyuan Zhang, Yida Zhang, **Jiahui Li**, Fei Dou, Wenzhan Song, Hae Young Noh. "Contact-Free Continuous ABP Waveform Reconstruction via Triaxial Bodyseismography." *HumanSys Workshop @ MobiCom 2026*.
+- Yuanyuan Zhang, Yida Zhang, **Jiahui Li**, Yuyan Wu, Fei Dou, Xiao Yin, Zhenlin An, Hae Young Noh, Wenzhan Song. "Physics-Constrained Deep Learning Model for Contactless Blood Pressure Monitoring from Triaxial Bodyseismography." *Major revision at IEEE Transactions on Mobile Computing*.
+- Md Shadab Alam, Linghan Zhang, **Jiahui Li**, Fei Dou, Pavlo Bazilinskyy. "Collision Patterns and Reporting Blind Spots in 971 California Autonomous Vehicle Crash Reports." *Major revision at Traffic Injury Prevention*.
+- Yida Zhang, Zixuan Zeng, Jiayu Chen, Yuanyuan Zhang, Yingjian Song, **Jiahui Li**, Xiang Zhang, Zaipeng Xie, Xiao Yin, Jie Yuan, Fei Dou, Wenzhan Song. "SeismoAF: AFib Detection from BodySeismoGraphy via Physiology-Guided AFib Synthesis and Context-Aware Adaptation." *Under review at IMWUT 2026*.
+- Yida Zhang, Yuanyuan Zhang, Jiayu Chen, Zixuan Zeng, Yingjian Song, **Jiahui Li**, Xiao Yin, Zaipeng Xie, Xiang Zhang, Guoliang Xing, Zhenlin An, Fei Dou, Wenzhan Song. "BSG2ECG: Contactless Electrocardiogram Monitoring with Triaxial Bodyseismography." *Under review at PerCom 2027*.
+- Jiayu Chen, Zixuan Zeng, Yingjian Song, Yida Zhang, **Jiahui Li**, Zhenlin An, Xiang Zhang, Fei Dou, Deepak Das, Bradley Phillips, Wenzhan Song. "SeismoApnea: Bodyseismography-Based Overnight Sleep Apnea Monitoring and Apnea-Hypopnea Index Estimation." *Under review at PerCom 2027*.
+- Zixuan Zeng, Jiayu Chen, Yida Zhang, Yingjian Song, **Jiahui Li**, Zaid Pitafi, Xiang Zhang, Fei Dou, Deepak Das, Bradley Phillips, Wenzhan Song. "BSGSleep: Sleep Quality Monitoring via Multi-Axis Bodyseismography." *Under review at PerCom 2027*.
 
 
 # 📖 Education
-- *2024 - current*, University of Georgia, Ph.D. in Computer Science. Advisor: Dr. Fei Dou.
-- *2021 - 2022*, University College London, M.S. in Scientific and Data-intensive Computing.
-- *2017 - 2021*, University of Liverpool / Xi'an Jiaotong-Liverpool University, B.S. in Computer Science and Engineering.
+- *Aug. 2024 - present*, University of Georgia, Ph.D. in Computer Science (GPA 4.00/4.00). Advisor: Dr. Fei Dou.
+- *2021 - 2022*, University College London, M.Sc. in Scientific and Data-Intensive Computing (GPA 3.62/4.00).
+- *2017 - 2021*, University of Liverpool, B.Sc. in Computer Science and Engineering (GPA 3.92/4.00).
 
 
 # 💼 Experiences
-- *2024 - current*, Ph.D. Student, University of Georgia. Advisor: Dr. Fei Dou.
-- *2023 - 2024*, Research Assistant, Hong Kong University of Science and Technology. Advisor: Prof. Dit-Yan Yeung.
+- *Aug. 2024 - present*, **Graduate Research Assistant**, School of Computing, University of Georgia. Advisor: Dr. Fei Dou.
+- *2023 - 2024*, **Research Assistant**, Hong Kong University of Science and Technology. Supervisor: Prof. Dit-Yan Yeung. Built MGTST, a multi-scale, cross-channel gated Transformer for multivariate long-term forecasting.
+
+
+# 👨‍🏫 Teaching
+- *Fall 2024, Spring 2025*, Teaching Assistant, CSCI 1302: Software Development, University of Georgia.
+- *Fall 2025, Fall 2026*, Teaching Assistant, CSCI 4470: Algorithms, University of Georgia.

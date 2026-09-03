@@ -10,52 +10,71 @@ redirect_from:
 <span class='anchor' id='cv'></span>
 
 **Jiahui Li**<br>
-Ph.D. Student, School of Computing, University of Georgia<br>
+School of Computing, University of Georgia<br>
 Athens, Georgia, USA · [jl57095@uga.edu](mailto:jl57095@uga.edu)<br>
-[Google Scholar](https://scholar.google.com/citations?user=CGnz6VQAAAAJ&hl=en) · [GitHub](https://github.com/jimmylihui) · [LinkedIn](https://www.linkedin.com/in/jiahui-li-942200254)
+[Personal Website](https://jimmylihui.github.io) · [Google Scholar](https://scholar.google.com/citations?user=CGnz6VQAAAAJ&hl=en) · [GitHub](https://github.com/jimmylihui) · [LinkedIn](https://www.linkedin.com/in/jiahui-li-942200254)
 
 📄 [**Download this CV as PDF**](/files/CV_Jiahui_Li.pdf)
 
 
-# 🔬 Research Interests
+# 🧬 Biography
 
-Mobile and wearable sensing, human-centered AI, and healthcare applications, with a focus on deep learning for physiological time series and signal processing. My work spans cardiomechanical and physiological signal analysis (ECG, PPG, BCG, BSG), instruction-tuned large language models for health, and clinical benchmark design.
+Jiahui Li is a Ph.D. student in Computer Science at the University of Georgia, supervised by Dr. Fei Dou. His research focuses on evidence-grounded and explainable artificial intelligence for clinical diagnosis and health sensing, including multimodal clinical reasoning, physiological time-series modeling, and trustworthy evaluation. His work spans electrocardiography, photoplethysmography, ballistocardiography, bodyseismography, vision-language models, and instruction-tuned large language models.
 
 
 # 📖 Education
 
-- *2024 - current*, **University of Georgia**, Ph.D. in Computer Science. Advisor: Dr. Fei Dou.
-- *2021 - 2022*, **University College London**, M.S. in Scientific and Data-intensive Computing (Merit).
-- *2017 - 2021*, **University of Liverpool / Xi'an Jiaotong-Liverpool University**, B.S. in Computer Science and Engineering.
+- **University of Georgia** — Ph.D. in Computer Science, *Aug. 2024 – Present*. GPA 4.00/4.00.
+- **University College London** — M.Sc. in Scientific and Data-Intensive Computing, *2021 – 2022*. GPA 3.62/4.00.
+- **University of Liverpool** — B.Sc. in Computer Science and Engineering, *2017 – 2021*. GPA 3.92/4.00.
 
 
-# 💼 Experience
+# 🔬 Research Experience
 
-- *2024 - current*, **Ph.D. Student**, University of Georgia. Advisor: Dr. Fei Dou.<br>
-  Research on wearable and physiological sensing, LLMs for health signals, and clinical benchmarks.
-- *2023 - 2024*, **Research Assistant**, Hong Kong University of Science and Technology. Advisor: Prof. Dit-Yan Yeung.<br>
-  Deep learning for multivariate long-term time-series forecasting.
+**Graduate Research Assistant**, School of Computing, University of Georgia — *Aug. 2024 – Present*<br>
+Advisor: Dr. Fei Dou
+
+- **DynamicDx** (Lead): Built a reproducible benchmark of 71 video-grounded neurological consultations across 11 phenomenologies. Evaluation of five vision-language models localized the primary diagnostic bottleneck to evidence acquisition rather than downstream interpretation.
+- **EarlyDx** (Lead): Designed an admission-anchored benchmark for open-ended, evidence-supported emergency-department diagnosis, testing whether generated diagnoses are grounded in retrievable clinical evidence.
+- **DeepArrhythmia** (Lead): Developed segment-contextualized electrocardiogram classification with selective acquisition of waveform images, R-peak locations, and rhythm-morphology evidence, producing an auditable decision trace.
+- **BEACON-BP** (Lead): Studied contactless blood-pressure estimation from bed-frame geophone sensing using invasive arterial-line measurements as the clinical reference.
+- **Peak-Detector / Peak-R1** (Lead): Built instruction-tuned large-language-model methods for explainable peak detection across ECG, PPG, BCG, and BSG without per-modality retraining.
+- **ADLGen** (Co-Lead, co-first author): Synthesized symbolic, event-triggered smart-home sensor sequences for activity modeling and ambient assisted living.
+
+**Research Assistant**, Hong Kong University of Science and Technology — *2023 – 2024*<br>
+Supervisor: Prof. Dit-Yan Yeung
+
+- Built MGTST, a multi-scale, cross-channel gated Transformer for multivariate long-term forecasting in high-dimensional time series.
 
 
 # 📝 Publications
 
-1. **Jiahui Li**, Ruili Fang, Zishuai Liu, Yutong Guo, Nan Yang, Wenzhan Song, Jin Lu, Fei Dou. [EarlyDx: An Admission-Anchored Benchmark for Open-Ended Generation of Evidence-Supported ED-Encounter Diagnoses](https://arxiv.org/abs/2607.28788). *Preprint*, 2026.
+<small>∗ equal contribution, † corresponding author. Author names in <strong>bold</strong> indicate myself.</small>
 
-2. **Jiahui Li**, Yida Zhang, Zixuan Zeng, Jiayu Chen, Yingjian Song, Yin Xiao, Nishan Dong, Junjie Lu, Younghoon Kwon, Xiang Zhang, Jin Lu, Wenzhan Song, Fei Dou. [Peak-Detector: Explainable Peak Detection via Instruction-Tuned Large Language Models in Physiological Signals](https://dl.acm.org/doi/10.1145/3810224). *Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT)*, 2026.
+### First-Author Papers
 
-3. **Jiahui Li**, Ruili Fang, Zishuai Liu, WenZhan Song, Jin Lu, Fei Dou. [DeepArrhythmia: Segment-Contextualized ECG Arrhythmia Classification via Selective Evidence Acquisition](https://arxiv.org/abs/2605.16441). *Preprint*, 2026.
+- **Jiahui Li**, Yutong Guo, Nan Yang, Wenzhan Song, Jin Lu, Fei Dou&dagger;. "DynamicDx: Evaluating Perception and Evidence Acquisition in Video-Grounded Conversational Diagnosis." *Under review at ICLR 2027*.
+- **Jiahui Li**, Ruili Fang, Zishuai Liu, Yutong Guo, Nan Yang, Wenzhan Song, Jin Lu, Fei Dou&dagger;. "[EarlyDx: An Admission-Anchored Benchmark for Open-Ended Generation of Evidence-Supported ED-Encounter Diagnoses](https://arxiv.org/abs/2607.28788)." *Under review at KDD 2027*.
+- **Jiahui Li**, Yuanyuan Zhang, Yida Zhang, Zixuan Zeng, Jiayu Chen, Yingjian Song, Yin Xiao, Nishan Dong, Junjie Lu, Xiang Zhang, Jin Lu, Wenzhan Song, Fei Dou&dagger;. "BEACON-BP: A Feasibility Study of Bed-Frame Geophone Sensing for Contactless Blood Pressure Estimation with Arterial-Line Reference." *Under review at IMWUT 2026*.
+- **Jiahui Li**, Yida Zhang, Zixuan Zeng, Jiayu Chen, Yingjian Song, Yin Xiao, Nishan Dong, Junjie Lu, Younghoon Kwon, Xiang Zhang, Jin Lu, Wenzhan Song, Fei Dou&dagger;. "[Peak-Detector: Explainable Peak Detection via Instruction-Tuned Large Language Models in Physiological Signal](https://dl.acm.org/doi/10.1145/3810224)." *ACM IMWUT (UbiComp) 2026*, CSRankings.
+- Weihang You∗, Hanqi Jiang∗, **Jiahui Li**∗ (co-first author), Zishuai Liu∗, Tianming Liu, Jin Lu, Fei Dou&dagger;. "[ADLGen: Synthesizing Symbolic, Event-Triggered Sensor Sequences for Smart-Home Human Activity Modeling](https://dl.acm.org/doi/10.1145/3774906.3802796)." *ACM SenSys 2026*, CORE A*/CSRankings.
+- **Jiahui Li**, Ruili Fang, Zishuai Liu, Wenzhan Song, Jin Lu, Fei Dou&dagger;. "[DeepArrhythmia: Segment-Contextualized ECG Arrhythmia Classification via Selective Evidence Acquisition](https://arxiv.org/abs/2605.16441)." *To appear at NeurIPS 2026*, CORE A*/CSRankings.
+- **Jiahui Li**, Yida Zhang, Zixuan Zeng, Jiayu Chen, Xiang Zhang, Jin Lu, Wenzhan Song, Fei Dou&dagger;. "Peak-R1: Instruction-Tuned Large Language Models for Robust J-Peak Detection." *Learning from Time Series for Health Workshop @ NeurIPS 2025*.
 
-4. Weihang You, Hanqi Jiang, **Jiahui Li**, Zishuai Liu, Tianming Liu, Jin Lu, Fei Dou. [ADLGen: Synthesizing Symbolic, Event-Triggered Sensor Sequences for Smart-Home Human Activity Modeling](https://dl.acm.org/doi/10.1145/3774906.3802796). *ACM SenSys 2026*.
+### Collaborative Papers
 
-5. **Jiahui Li**, Yida Zhang, Zixuan Zeng, Jiayu Chen, Xiang Zhang, Jin Lu, WenZhan Song, Fei Dou. [Peak-R1: Instruction-Tuned Large Language Models for Robust J-Peak Detection in Cardiomechanical Signals](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=CGnz6VQAAAAJ&citation_for_view=CGnz6VQAAAAJ:9yKSN-GCB0IC). *NeurIPS 2025 Workshop on Learning from Time Series for Health*.
+- Yuyan Wu, Yuanyuan Zhang, Yida Zhang, **Jiahui Li**, Fei Dou, Wenzhan Song, Hae Young Noh. "Contact-Free Continuous ABP Waveform Reconstruction via Triaxial Bodyseismography." *HumanSys Workshop @ MobiCom 2026*.
+- Yuanyuan Zhang, Yida Zhang, **Jiahui Li**, Yuyan Wu, Fei Dou, Xiao Yin, Zhenlin An, Hae Young Noh, Wenzhan Song. "Physics-Constrained Deep Learning Model for Contactless Blood Pressure Monitoring from Triaxial Bodyseismography." *Major revision at IEEE Transactions on Mobile Computing*.
+- Md Shadab Alam, Linghan Zhang, **Jiahui Li**, Fei Dou, Pavlo Bazilinskyy. "Collision Patterns and Reporting Blind Spots in 971 California Autonomous Vehicle Crash Reports." *Major revision at Traffic Injury Prevention*.
+- Yida Zhang, Zixuan Zeng, Jiayu Chen, Yuanyuan Zhang, Yingjian Song, **Jiahui Li**, Xiang Zhang, Zaipeng Xie, Xiao Yin, Jie Yuan, Fei Dou, Wenzhan Song. "SeismoAF: AFib Detection from BodySeismoGraphy via Physiology-Guided AFib Synthesis and Context-Aware Adaptation." *Under review at IMWUT 2026*.
+- Yida Zhang, Yuanyuan Zhang, Jiayu Chen, Zixuan Zeng, Yingjian Song, **Jiahui Li**, Xiao Yin, Zaipeng Xie, Xiang Zhang, Guoliang Xing, Zhenlin An, Fei Dou, Wenzhan Song. "BSG2ECG: Contactless Electrocardiogram Monitoring with Triaxial Bodyseismography." *Under review at PerCom 2027*.
+- Jiayu Chen, Zixuan Zeng, Yingjian Song, Yida Zhang, **Jiahui Li**, Zhenlin An, Xiang Zhang, Fei Dou, Deepak Das, Bradley Phillips, Wenzhan Song. "SeismoApnea: Bodyseismography-Based Overnight Sleep Apnea Monitoring and Apnea-Hypopnea Index Estimation." *Under review at PerCom 2027*.
+- Zixuan Zeng, Jiayu Chen, Yida Zhang, Yingjian Song, **Jiahui Li**, Zaid Pitafi, Xiang Zhang, Fei Dou, Deepak Das, Bradley Phillips, Wenzhan Song. "BSGSleep: Sleep Quality Monitoring via Multi-Axis Bodyseismography." *Under review at PerCom 2027*.
+- Haoran Lu, Luyang Fang, Ruidong Zhang, and others, including **Jiahui Li**. "[Alignment and Safety in Large Language Models: Safety Mechanisms, Training Paradigms, and Emerging Challenges](https://arxiv.org/abs/2507.19672)." *arXiv preprint*, 2025.
+- Zicheng Liu, **Jiahui Li**, Siyuan Li, Zelin Zang, Cheng Tan, Yufei Huang, Yajing Bai, Stan Z. Li. "[GenBench: A Benchmarking Suite for Systematic Evaluation of Genomic Foundation Models](https://arxiv.org/abs/2406.01627)." *arXiv preprint*, 2024.
 
-6. Haoran Lu, Luyang Fang, Ruidong Zhang, et al. [Alignment and Safety in Large Language Models: Safety Mechanisms, Training Paradigms, and Emerging Challenges](https://arxiv.org/abs/2507.19672). *Preprint*, 2025.
 
-7. Zicheng Liu, **Jiahui Li**, Siyuan Li, Zelin Zang, Cheng Tan, Yufei Huang, Yajing Bai, Stan Z. Li. [GenBench: A Benchmarking Suite for Systematic Evaluation of Genomic Foundation Models](https://arxiv.org/abs/2406.01627). *Preprint*, 2024.
+# 👨‍🏫 Teaching Assistant
 
-
-# 🛠 Skills
-
-- **Programming**: Python, MATLAB, Git
-- **Machine Learning**: PyTorch, deep learning for time series, large language model fine-tuning
-- **Research**: Signal processing, physiological data analysis, benchmark design
+- **CSCI 1302: Software Development** — Fall 2024 and Spring 2025, University of Georgia.
+- **CSCI 4470: Algorithms** — Fall 2025 and Fall 2026, University of Georgia.

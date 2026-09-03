@@ -18,5 +18,8 @@ main:
   - title: "Experiences"
     url: "/#-experiences"
 
+  - title: "Teaching"
+    url: "/#-teaching"
+
   - title: "Google Scholar"
     url: "https://scholar.google.com/citations?user=CGnz6VQAAAAJ&hl=en"
