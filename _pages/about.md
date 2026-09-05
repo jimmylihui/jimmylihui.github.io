@@ -97,9 +97,9 @@ Weihang You∗, Hanqi Jiang∗, **Jiahui Li**∗ <em>(co-first author)</em>, Zis
 
 <div class='paper-box-text' markdown="1">
 
-[Peak-R1: Instruction-Tuned Large Language Models for Robust J-Peak Detection](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=CGnz6VQAAAAJ&citation_for_view=CGnz6VQAAAAJ:9yKSN-GCB0IC)<br>
+[Peak-R1: Instruction-Tuned Large Language Models for Robust J-Peak Detection](https://openreview.net/forum?id=jSW3GZQoVJ)<br>
 **Jiahui Li**, Yida Zhang, Zixuan Zeng, Jiayu Chen, Xiang Zhang, Jin Lu, Wenzhan Song, Fei Dou†<br>
-*Learning from Time Series for Health Workshop @ NeurIPS 2025*.
+*Learning from Time Series for Health Workshop @ NeurIPS 2025*. [[openreview](https://openreview.net/forum?id=jSW3GZQoVJ)]
 
 </div>
 </div>
@@ -137,20 +137,7 @@ Zicheng Liu, **Jiahui Li**, Siyuan Li, Zelin Zang, Cheng Tan, Yufei Huang, Yajin
 
 # 📚 Other Publications
 
-**First-author papers under review**
-
-- **Jiahui Li**, Yutong Guo, Nan Yang, Wenzhan Song, Jin Lu, Fei Dou&dagger;. "DynamicDx: Evaluating Perception and Evidence Acquisition in Video-Grounded Conversational Diagnosis." *Under review at ICLR 2027*.
-- **Jiahui Li**, Yuanyuan Zhang, Yida Zhang, Zixuan Zeng, Jiayu Chen, Yingjian Song, Yin Xiao, Nishan Dong, Junjie Lu, Xiang Zhang, Jin Lu, Wenzhan Song, Fei Dou&dagger;. "BEACON-BP: A Feasibility Study of Bed-Frame Geophone Sensing for Contactless Blood Pressure Estimation with Arterial-Line Reference." *Under review at IMWUT 2026*.
-
-**Collaborative papers**
-
-- Yuyan Wu, Yuanyuan Zhang, Yida Zhang, **Jiahui Li**, Fei Dou, Wenzhan Song, Hae Young Noh. "Contact-Free Continuous ABP Waveform Reconstruction via Triaxial Bodyseismography." *HumanSys Workshop @ MobiCom 2026*.
-- Yuanyuan Zhang, Yida Zhang, **Jiahui Li**, Yuyan Wu, Fei Dou, Xiao Yin, Zhenlin An, Hae Young Noh, Wenzhan Song. "Physics-Constrained Deep Learning Model for Contactless Blood Pressure Monitoring from Triaxial Bodyseismography." *Major revision at IEEE Transactions on Mobile Computing*.
-- Md Shadab Alam, Linghan Zhang, **Jiahui Li**, Fei Dou, Pavlo Bazilinskyy. "Collision Patterns and Reporting Blind Spots in 971 California Autonomous Vehicle Crash Reports." *Major revision at Traffic Injury Prevention*.
-- Yida Zhang, Zixuan Zeng, Jiayu Chen, Yuanyuan Zhang, Yingjian Song, **Jiahui Li**, Xiang Zhang, Zaipeng Xie, Xiao Yin, Jie Yuan, Fei Dou, Wenzhan Song. "SeismoAF: AFib Detection from BodySeismoGraphy via Physiology-Guided AFib Synthesis and Context-Aware Adaptation." *Under review at IMWUT 2026*.
-- Yida Zhang, Yuanyuan Zhang, Jiayu Chen, Zixuan Zeng, Yingjian Song, **Jiahui Li**, Xiao Yin, Zaipeng Xie, Xiang Zhang, Guoliang Xing, Zhenlin An, Fei Dou, Wenzhan Song. "BSG2ECG: Contactless Electrocardiogram Monitoring with Triaxial Bodyseismography." *Under review at PerCom 2027*.
-- Jiayu Chen, Zixuan Zeng, Yingjian Song, Yida Zhang, **Jiahui Li**, Zhenlin An, Xiang Zhang, Fei Dou, Deepak Das, Bradley Phillips, Wenzhan Song. "SeismoApnea: Bodyseismography-Based Overnight Sleep Apnea Monitoring and Apnea-Hypopnea Index Estimation." *Under review at PerCom 2027*.
-- Zixuan Zeng, Jiayu Chen, Yida Zhang, Yingjian Song, **Jiahui Li**, Zaid Pitafi, Xiang Zhang, Fei Dou, Deepak Das, Bradley Phillips, Wenzhan Song. "BSGSleep: Sleep Quality Monitoring via Multi-Axis Bodyseismography." *Under review at PerCom 2027*.
+- Yuanyuan Zhang, Yida Zhang, **Jiahui Li**, Yuyan Wu, Fei Dou, Xiao Yin, Zhenlin An, Hae Young Noh, Wenzhan Song. "[Physics-Constrained Deep Learning Model for Contactless Blood Pressure Monitoring from Triaxial Bodyseismography](https://arxiv.org/abs/2608.23562)." *Major revision at IEEE Transactions on Mobile Computing*. [[pdf](https://arxiv.org/pdf/2608.23562)]
 
 
 # 📖 Education
