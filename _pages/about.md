@@ -39,7 +39,7 @@ My research focuses on **evidence-grounded and explainable artificial intelligen
 
 [DeepArrhythmia: Segment-Contextualized ECG Arrhythmia Classification via Selective Evidence Acquisition](https://arxiv.org/abs/2605.16441)<br>
 **Jiahui Li**, Ruili Fang, Zishuai Liu, Wenzhan Song, Jin Lu, Fei Dou†<br>
-*<span style="color:#c0392b">NeurIPS 2026</span>* (CORE A*/CSRankings). [[pdf](https://arxiv.org/pdf/2605.16441)]
+*NeurIPS 2026*. [[pdf](https://arxiv.org/pdf/2605.16441)]
 
 </div>
 </div>
@@ -54,7 +54,7 @@ My research focuses on **evidence-grounded and explainable artificial intelligen
 
 [Peak-Detector: Explainable Peak Detection via Instruction-Tuned Large Language Models in Physiological Signal](https://dl.acm.org/doi/10.1145/3810224)<br>
 **Jiahui Li**, Yida Zhang, Zixuan Zeng, Jiayu Chen, Yingjian Song, Yin Xiao, Nishan Dong, Junjie Lu, Younghoon Kwon, Xiang Zhang, Jin Lu, Wenzhan Song, Fei Dou†<br>
-*ACM IMWUT (UbiComp) 2026* (CSRankings). [[paper](https://dl.acm.org/doi/10.1145/3810224)] [[arXiv](https://arxiv.org/abs/2605.16452)]
+*ACM IMWUT (UbiComp) 2026*. [[paper](https://dl.acm.org/doi/10.1145/3810224)] [[arXiv](https://arxiv.org/abs/2605.16452)]
 
 </div>
 </div>
@@ -69,7 +69,7 @@ My research focuses on **evidence-grounded and explainable artificial intelligen
 
 [ADLGen: Synthesizing Symbolic, Event-Triggered Sensor Sequences for Smart-Home Human Activity Modeling](https://dl.acm.org/doi/10.1145/3774906.3802796)<br>
 Weihang You∗, Hanqi Jiang∗, **Jiahui Li**∗ <em>(co-first author)</em>, Zishuai Liu∗, Tianming Liu, Jin Lu, Fei Dou†<br>
-*ACM SenSys 2026* (CORE A*/CSRankings). [[paper](https://dl.acm.org/doi/10.1145/3774906.3802796)]
+*ACM SenSys 2026*. [[paper](https://dl.acm.org/doi/10.1145/3774906.3802796)]
 
 </div>
 </div>
@@ -84,7 +84,7 @@ Weihang You∗, Hanqi Jiang∗, **Jiahui Li**∗ <em>(co-first author)</em>, Zis
 
 [EarlyDx: An Admission-Anchored Benchmark for Open-Ended Generation of Evidence-Supported ED-Encounter Diagnoses](https://arxiv.org/abs/2607.28788)<br>
 **Jiahui Li**, Ruili Fang, Zishuai Liu, Yutong Guo, Nan Yang, Wenzhan Song, Jin Lu, Fei Dou†<br>
-*Under review at KDD 2027*. [[pdf](https://arxiv.org/pdf/2607.28788)]
+*Preprint*, 2026. [[pdf](https://arxiv.org/pdf/2607.28788)]
 
 </div>
 </div>
@@ -137,7 +137,7 @@ Zicheng Liu, **Jiahui Li**, Siyuan Li, Zelin Zang, Cheng Tan, Yufei Huang, Yajin
 
 # 📚 Other Publications
 
-- Yuanyuan Zhang, Yida Zhang, **Jiahui Li**, Yuyan Wu, Fei Dou, Xiao Yin, Zhenlin An, Hae Young Noh, Wenzhan Song. "[Physics-Constrained Deep Learning Model for Contactless Blood Pressure Monitoring from Triaxial Bodyseismography](https://arxiv.org/abs/2608.23562)." *Major revision at IEEE Transactions on Mobile Computing*. [[pdf](https://arxiv.org/pdf/2608.23562)]
+- Yuanyuan Zhang, Yida Zhang, **Jiahui Li**, Yuyan Wu, Fei Dou, Xiao Yin, Zhenlin An, Hae Young Noh, Wenzhan Song. "[Physics-Constrained Deep Learning Model for Contactless Blood Pressure Monitoring from Triaxial Bodyseismography](https://arxiv.org/abs/2608.23562)." *arXiv preprint*, 2026. [[pdf](https://arxiv.org/pdf/2608.23562)]
 
 
 # 📖 Education
