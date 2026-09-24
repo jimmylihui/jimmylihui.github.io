@@ -12,13 +12,16 @@
     if (mobile.matches || !section) {
       el.scrollIntoView({ block: 'start' });
     } else {
-      track.scrollLeft = section.offsetLeft - track.offsetLeft;
+      var r = section.getBoundingClientRect(), t = track.getBoundingClientRect();
+      if (r.left < t.left - 1 || r.right > t.right + 1) track.scrollLeft += r.left - t.left;
+      lockUntil = Date.now() + 1000;
       section.scrollTop = el === section ? 0 : el.offsetTop - section.offsetTop - 16;
     }
     setActive(section ? section.id : id);
     return true;
   }
 
+  var lockUntil = 0;  // keep an explicitly chosen menu item while the track animates
   function setActive(id) {
     menuLinks.forEach(function (a) { a.classList.toggle('active', a.dataset.target === id); });
   }
@@ -37,6 +40,7 @@
   // Highlight the leftmost column in view (desktop) or the one at the top (mobile).
   var sections = Array.prototype.slice.call(document.querySelectorAll('.section[id]'));
   function syncActive() {
+    if (Date.now() < lockUntil) return;
     var cur = sections[0];
     sections.forEach(function (s) {
       var r = s.getBoundingClientRect();
@@ -49,6 +53,7 @@
   window.addEventListener('scroll', syncActive, { passive: true });
   if (location.hash) setTimeout(function () { reveal(decodeURIComponent(location.hash.slice(1))); }, 50);
   else syncActive();
+  window.addEventListener('hashchange', function () { reveal(decodeURIComponent(location.hash.slice(1))); });
 
   // Vertical wheel over the gap between columns scrolls the track sideways.
   if (track) track.addEventListener('wheel', function (e) {

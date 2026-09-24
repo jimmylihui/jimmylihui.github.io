@@ -131,9 +131,9 @@ img { max-width: 100%; }
 .carousel { position: relative; }
 .slides { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; scrollbar-width: none; }
 .slides::-webkit-scrollbar { display: none; }
-.card { flex: 0 0 100%; scroll-snap-align: start; border: 1px solid var(--rule); border-radius: 8px; padding: 14px 16px 16px; background: #fff; }
-.card-img { display: block; height: 220px; margin: -4px -6px 12px; border-radius: 6px; overflow: hidden; background: #fafafa; }
-.card-img img { width: 100%; height: 100%; object-fit: contain; transition: transform .3s; }
+.card { display: flex; flex-direction: column; flex: 0 0 100%; scroll-snap-align: start; border: 1px solid var(--rule); border-radius: 8px; padding: 14px 16px 16px; background: #fff; }
+.card-img { display: block; aspect-ratio: 2 / 1; margin: -4px -6px 12px; border-radius: 6px; overflow: hidden; background: #fff; border: 1px solid #f0f0f0; }
+.card-img img { display: block; width: 100%; height: 100%; object-fit: contain; transition: transform .3s; }
 .card-img:hover img { transform: scale(1.03); }
 .venue { display: inline-block; font-size: 11.5px; font-weight: 700; letter-spacing: .3px; color: var(--navy);
   background: #e9eef6; border-radius: 3px; padding: 1px 8px; margin-bottom: 6px; }
@@ -141,7 +141,7 @@ img { max-width: 100%; }
 .card-title:hover { color: var(--navy); }
 .card-authors { font-size: 13px; color: #666; margin: 6px 0 4px; line-height: 1.5; }
 .card-authors b { color: #222; }
-.card-links { margin: 0; font-size: 13px; }
+.card-links { margin: auto 0 0; font-size: 13px; }
 .card-links a { margin-right: 4px; }
 .nav-arrows { display: flex; justify-content: flex-end; align-items: center; gap: 8px; margin-top: 10px; }
 .nav-arrows button { width: 34px; height: 34px; border: 0; border-radius: 4px; cursor: pointer; background: #222; color: #fff; }
@@ -174,7 +174,6 @@ img { max-width: 100%; }
   .about-photo { width: 140px; margin: 0 auto; }
   .pipeline { grid-template-columns: 1fr 1fr; }
   .pipeline .arrow { display: none; }
-  .card-img { height: 170px; }
   .timeline li { grid-template-columns: 1fr; gap: 2px; }
 }
 @media (prefers-reduced-motion: reduce) {
