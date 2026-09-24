@@ -11,6 +11,10 @@ description              : "PhD Student in Computer Science at the University of
 repository               : "jimmylihui/jimmylihui.github.io"
 google_scholar_stats_use_cdn : true
 
+# Visitor analytics (private dashboard at https://<code>.goatcounter.com).
+# Leave empty to disable.
+goatcounter              : "jimmylihui"
+
 # google analytics
 google_analytics_id      :  # get google_analytics_id from https://analytics.google.com/analytics/
 

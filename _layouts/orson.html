@@ -59,5 +59,8 @@
   </main>
 
   <script src="{{ '/assets/js/orson.js' | relative_url }}"></script>
+  {% if site.goatcounter != "" and site.goatcounter and jekyll.environment == "production" %}
+  <script data-goatcounter="https://{{ site.goatcounter }}.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+  {% endif %}
 </body>
 </html>
