@@ -22,6 +22,7 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 # Site Author
 author:
   name             : "Jiahui Li"
+  name_zh          : "李佳晖"
   avatar           : "images/profile.png"
   bio              : "PhD Student in Computer Science, UGA"
   location         : "Athens, Georgia, USA"
@@ -51,7 +52,7 @@ author:
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          :  "JiahuiLi362782"
+  twitter          :  "JiahuiLi348568"
   vine             :
   weibo            :
   xing             :

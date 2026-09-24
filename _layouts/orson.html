@@ -21,6 +21,7 @@
     <div class="sidebar-top">
       <a href="{{ '/' | relative_url }}" class="avatar-link"><img class="avatar" src="{{ a.avatar | relative_url }}" alt="{{ a.name }}"></a>
       <h1 class="name">{{ a.name }}</h1>
+      {% if a.name_zh %}<p class="name-zh">{{ a.name_zh }}</p>{% endif %}
       <p class="tagline">{{ a.bio }}</p>
     </div>
 
