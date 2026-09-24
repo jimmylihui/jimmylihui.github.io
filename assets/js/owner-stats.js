@@ -29,9 +29,27 @@
   function esc(s) { return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
   function ymd(d) { return d.toISOString().slice(0, 10); }
 
-  function api(path, token) {
+  // GoatCounter allows ~4 API requests/second: queue calls, space them out,
+  // retry on 429 after the server-provided reset, and cache for 2 minutes.
+  var queue = Promise.resolve(), cache = {};
+  function sleep(ms) { return new Promise(function (r) { setTimeout(r, ms); }); }
+  function request(path, token, tries) {
     return fetch(site + '/api/v0' + path, { headers: { Authorization: 'Bearer ' + token, 'Content-Type': 'application/json' } })
-      .then(function (r) { if (!r.ok) throw new Error(r.status === 401 || r.status === 403 ? 'Token rejected (' + r.status + ')' : 'HTTP ' + r.status); return r.json(); });
+      .then(function (r) {
+        if (r.status === 429 && tries < 4) {
+          var wait = (parseFloat(r.headers.get('X-Rate-Limit-Reset')) || 1) * 1000 + 250;
+          return sleep(wait).then(function () { return request(path, token, tries + 1); });
+        }
+        if (!r.ok) throw new Error(r.status === 401 || r.status === 403 ? 'Token rejected (' + r.status + ')' : r.status === 429 ? 'Rate limited by GoatCounter, try again in a few seconds' : 'HTTP ' + r.status);
+        return r.json();
+      });
+  }
+  function api(path, token) {
+    var hit = cache[path];
+    if (hit && Date.now() - hit.t < 120e3) return Promise.resolve(hit.v);
+    var p = queue.then(function () { return request(path, token, 0); });
+    queue = p.then(function () { return sleep(300); }, function () { return sleep(300); });
+    return p.then(function (v) { cache[path] = { t: Date.now(), v: v }; return v; });
   }
 
   function mount() {
@@ -82,7 +100,9 @@
     p.querySelectorAll('[data-d]').forEach(function (t) {
       t.onclick = function () { p.querySelectorAll('[data-d]').forEach(function (x) { x.classList.toggle('on', x === t); }); load_(+t.dataset.d); };
     });
+    var seq = 0;
     function load_(days) {
+      var mine = ++seq;
       body.innerHTML = '<p class="os-muted">Loading…</p>';
       var q = '?start=' + ymd(new Date(Date.now() - days * 864e5)) + '&end=' + ymd(new Date(Date.now() + 864e5));
       Promise.all([
@@ -91,6 +111,7 @@
         api('/stats/toprefs' + q + '&limit=6', token),
         api('/stats/locations' + q + '&limit=6', token)
       ]).then(function (r) {
+        if (mine !== seq) return;
         var total = r[0], hits = r[1].hits || [], refs = r[2].stats || [], locs = r[3].stats || [];
         var days_ = (total.stats || []).map(function (s) { return s.daily || 0; });
         body.innerHTML = '<div class="os-big">' + (total.total || 0) + '<small>visits</small></div>' + spark(days_) +
@@ -98,6 +119,7 @@
           list('Referrers', refs.map(function (s) { return [s.name || '(direct / unknown)', s.count]; })) +
           list('Locations', locs.map(function (s) { return [s.name || '(unknown)', s.count]; }));
       }).catch(function (e) {
+        if (mine !== seq) return;
         body.innerHTML = '<p class="os-err">' + esc(e.message) + '</p>' + (/Token/.test(e.message) ? '<p class="os-muted">Log out and log in again with a valid token.</p>' : '');
       });
     }
