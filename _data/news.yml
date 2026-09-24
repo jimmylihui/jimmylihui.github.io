@@ -1,0 +1,13 @@
+# Newest first. `date` is free text (YYYY/MM or YYYY); `text` may contain HTML.
+- date: "2026"
+  text: 'Our paper <a href="https://arxiv.org/abs/2605.16441">DeepArrhythmia</a> on evidence-acquiring ECG arrhythmia classification is accepted to <b>NeurIPS 2026</b>!'
+- date: "2026"
+  text: '<a href="https://dl.acm.org/doi/10.1145/3810224">Peak-Detector</a>, explainable peak detection with instruction-tuned LLMs, is published in <b>ACM IMWUT (UbiComp) 2026</b>.'
+- date: "2026"
+  text: '<a href="https://dl.acm.org/doi/10.1145/3774906.3802796">ADLGen</a> (co-first author) is accepted to <b>ACM SenSys 2026</b>.'
+- date: "2026/07"
+  text: 'Released <a href="https://arxiv.org/abs/2607.28788">EarlyDx</a>, an admission-anchored benchmark for evidence-supported ED diagnosis.'
+- date: "2025"
+  text: '<a href="https://openreview.net/forum?id=jSW3GZQoVJ">Peak-R1</a> is accepted to the Learning from Time Series for Health Workshop @ <b>NeurIPS 2025</b>.'
+- date: "2024/08"
+  text: 'Started my Ph.D. in Computer Science at the University of Georgia with Dr. Fei Dou.'

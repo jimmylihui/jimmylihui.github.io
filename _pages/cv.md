@@ -2,7 +2,12 @@
 permalink: /cv/
 title: "Curriculum Vitae"
 excerpt: "Curriculum Vitae of Jiahui Li"
-author_profile: true
+layout: orson
+single: cv-page
+sections:
+  - { id: about, title: About, icon: "fa-solid fa-house" }
+  - { id: research, title: Research, icon: "fa-solid fa-wave-square" }
+  - { id: experience, title: Experience, icon: "fa-solid fa-graduation-cap" }
 redirect_from:
   - /resume
 ---

@@ -1,0 +1,85 @@
+# Research themes shown in the RESEARCH section, in order.
+# Each paper lists its theme id; papers render in the order they appear here.
+themes:
+  - id: signal
+    title: "Explainable Physiological Signal Understanding"
+    blurb: "Instruction-tuned LLMs that read raw ECG, PPG, BCG and BSG waveforms, locate diagnostic landmarks, and leave an auditable evidence trail."
+  - id: clinical
+    title: "Evidence-Grounded Clinical Reasoning & Evaluation"
+    blurb: "Benchmarks and methods that test whether a model's diagnosis is actually supported by retrievable clinical evidence."
+  - id: sensing
+    title: "Ubiquitous Health & Ambient Sensing"
+    blurb: "Contactless and smart-home sensing for health monitoring and human activity modeling."
+
+papers:
+  - theme: signal
+    title: "DeepArrhythmia: Segment-Contextualized ECG Arrhythmia Classification via Selective Evidence Acquisition"
+    authors: "<b>Jiahui Li</b>, Ruili Fang, Zishuai Liu, Wenzhan Song, Jin Lu, Fei Dou†"
+    venue: "NeurIPS 2026"
+    image: images/papers/deeparrhythmia.png
+    url: https://arxiv.org/abs/2605.16441
+    links:
+      - { name: pdf, url: "https://arxiv.org/pdf/2605.16441" }
+
+  - theme: signal
+    title: "Peak-Detector: Explainable Peak Detection via Instruction-Tuned Large Language Models in Physiological Signal"
+    authors: "<b>Jiahui Li</b>, Yida Zhang, Zixuan Zeng, Jiayu Chen, Yingjian Song, Yin Xiao, Nishan Dong, Junjie Lu, Younghoon Kwon, Xiang Zhang, Jin Lu, Wenzhan Song, Fei Dou†"
+    venue: "ACM IMWUT (UbiComp) 2026"
+    image: images/papers/peak-detector.png
+    url: https://dl.acm.org/doi/10.1145/3810224
+    links:
+      - { name: paper, url: "https://dl.acm.org/doi/10.1145/3810224" }
+      - { name: arXiv, url: "https://arxiv.org/abs/2605.16452" }
+
+  - theme: signal
+    title: "Peak-R1: Instruction-Tuned Large Language Models for Robust J-Peak Detection"
+    authors: "<b>Jiahui Li</b>, Yida Zhang, Zixuan Zeng, Jiayu Chen, Xiang Zhang, Jin Lu, Wenzhan Song, Fei Dou†"
+    venue: "TS4H Workshop @ NeurIPS 2025"
+    image: images/papers/peak-r1.png
+    url: https://openreview.net/forum?id=jSW3GZQoVJ
+    links:
+      - { name: openreview, url: "https://openreview.net/forum?id=jSW3GZQoVJ" }
+
+  - theme: clinical
+    title: "EarlyDx: An Admission-Anchored Benchmark for Open-Ended Generation of Evidence-Supported ED-Encounter Diagnoses"
+    authors: "<b>Jiahui Li</b>, Ruili Fang, Zishuai Liu, Yutong Guo, Nan Yang, Wenzhan Song, Jin Lu, Fei Dou†"
+    venue: "Preprint 2026"
+    image: images/papers/earlydx.png
+    url: https://arxiv.org/abs/2607.28788
+    links:
+      - { name: pdf, url: "https://arxiv.org/pdf/2607.28788" }
+
+  - theme: clinical
+    title: "GenBench: A Benchmarking Suite for Systematic Evaluation of Genomic Foundation Models"
+    authors: "Zicheng Liu, <b>Jiahui Li</b>, Siyuan Li, Zelin Zang, Cheng Tan, Yufei Huang, Yajing Bai, Stan Z. Li"
+    venue: "Preprint 2024"
+    image: images/papers/genbench.png
+    url: https://arxiv.org/abs/2406.01627
+    links:
+      - { name: pdf, url: "https://arxiv.org/pdf/2406.01627" }
+
+  - theme: clinical
+    title: "Alignment and Safety in Large Language Models: Safety Mechanisms, Training Paradigms, and Emerging Challenges"
+    authors: "Haoran Lu, Luyang Fang, Ruidong Zhang, and others, including <b>Jiahui Li</b>"
+    venue: "Preprint 2025"
+    image: images/papers/alignment.png
+    url: https://arxiv.org/abs/2507.19672
+    links:
+      - { name: pdf, url: "https://arxiv.org/pdf/2507.19672" }
+
+  - theme: sensing
+    title: "ADLGen: Synthesizing Symbolic, Event-Triggered Sensor Sequences for Smart-Home Human Activity Modeling"
+    authors: "Weihang You∗, Hanqi Jiang∗, <b>Jiahui Li</b>∗ <em>(co-first author)</em>, Zishuai Liu∗, Tianming Liu, Jin Lu, Fei Dou†"
+    venue: "ACM SenSys 2026"
+    image: images/papers/adlgen.png
+    url: https://dl.acm.org/doi/10.1145/3774906.3802796
+    links:
+      - { name: paper, url: "https://dl.acm.org/doi/10.1145/3774906.3802796" }
+
+  - theme: sensing
+    title: "Physics-Constrained Deep Learning Model for Contactless Blood Pressure Monitoring from Triaxial Bodyseismography"
+    authors: "Yuanyuan Zhang, Yida Zhang, <b>Jiahui Li</b>, Yuyan Wu, Fei Dou, Xiao Yin, Zhenlin An, Hae Young Noh, Wenzhan Song"
+    venue: "Preprint 2026"
+    url: https://arxiv.org/abs/2608.23562
+    links:
+      - { name: pdf, url: "https://arxiv.org/pdf/2608.23562" }

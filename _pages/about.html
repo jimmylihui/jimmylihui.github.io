@@ -1,0 +1,128 @@
+---
+permalink: /
+title: ""
+layout: orson
+redirect_from:
+  - /about/
+  - /about.html
+sections:
+  - { id: about, title: About, icon: "fa-solid fa-house" }
+  - { id: research, title: Research, icon: "fa-solid fa-wave-square" }
+  - { id: experience, title: Experience, icon: "fa-solid fa-graduation-cap" }
+---
+{% assign pubs = site.data.publications %}
+
+<article class="section" id="about">
+  <div class="section-inner">
+    <p class="section-num">.01</p>
+    <h2 class="section-title">About</h2>
+
+    <div class="about-grid">
+      <img class="about-photo" src="{{ '/images/profile.png' | relative_url }}" alt="Jiahui Li">
+      <div class="about-text">
+        <p>Hi! I am a Ph.D. student in Computer Science at the <a href="https://www.uga.edu/">University of Georgia</a>, advised by Dr. Fei Dou. Previously, I was a research assistant at the <a href="https://hkust.edu.hk/">Hong Kong University of Science and Technology</a> with Prof. Dit-Yan Yeung. I received my M.Sc. from <a href="https://www.ucl.ac.uk/">University College London</a> and B.Sc. from the <a href="https://www.liverpool.ac.uk/">University of Liverpool</a>.</p>
+        <p>I build <b>evidence-grounded and explainable AI for clinical diagnosis and health sensing</b>: models that read physiological signals (ECG, PPG, BCG, BSG) and clinical records, acquire the evidence they need, and reason to a diagnosis that a clinician can audit.</p>
+        <p class="about-links">
+          <a href="{{ '/files/CV_Jiahui_Li.pdf' | relative_url }}">CV / Resume</a>
+          <span class="dot"></span>
+          <a href="{{ site.author.googlescholar }}">Google Scholar</a>
+        </p>
+      </div>
+    </div>
+
+    <figure class="overview">
+      <div class="pipeline">
+        <a class="stage s-signal" href="#theme-signal"><i class="fa-solid fa-heart-pulse"></i><b>Signals &amp; records</b><small>ECG · PPG · BCG · BSG · EHR</small></a>
+        <span class="arrow"><i class="fa-solid fa-chevron-right"></i></span>
+        <a class="stage s-evidence" href="#theme-signal"><i class="fa-solid fa-magnifying-glass-chart"></i><b>Evidence acquisition</b><small>peaks · segments · findings</small></a>
+        <span class="arrow"><i class="fa-solid fa-chevron-right"></i></span>
+        <a class="stage s-reason" href="#theme-clinical"><i class="fa-solid fa-brain"></i><b>LLM / VLM reasoning</b><small>instruction-tuned, auditable</small></a>
+        <span class="arrow"><i class="fa-solid fa-chevron-right"></i></span>
+        <a class="stage s-dx" href="#theme-clinical"><i class="fa-solid fa-stethoscope"></i><b>Trustworthy diagnosis</b><small>benchmarked, evidence-backed</small></a>
+      </div>
+      <figcaption>Research Overview</figcaption>
+    </figure>
+
+    <div class="callout">
+      <b>I am always open to research collaborations.</b> If you work on health sensing, clinical AI, or LLM reasoning over physiological data, feel free to <a href="mailto:{{ site.author.email }}">shoot me an email</a>!
+    </div>
+
+    <h3 class="sub-title">Latest News</h3>
+    <ul class="news">
+      {% for n in site.data.news %}
+      <li><span class="news-date">{{ n.date }}:</span> {{ n.text }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+</article>
+
+<article class="section" id="research">
+  <div class="section-inner">
+    <p class="section-num">.02</p>
+    <h2 class="section-title">Research</h2>
+
+    <a class="banner-btn" href="{{ site.author.googlescholar }}">See the full publication list on Google Scholar <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+    <h3 class="themes-head">Research Themes:</h3>
+    <ul class="theme-index">
+      {% for t in pubs.themes %}
+      <li><a href="#theme-{{ t.id }}">{{ t.title }}</a></li>
+      {% endfor %}
+    </ul>
+
+    {% for t in pubs.themes %}
+    <section class="theme" id="theme-{{ t.id }}">
+      <h3 class="theme-title">{{ t.title }}</h3>
+      <p class="theme-blurb">{{ t.blurb }}</p>
+      {% assign papers = pubs.papers | where: "theme", t.id %}
+      <div class="carousel" data-count="{{ papers | size }}">
+        <div class="slides">
+          {% for p in papers %}
+          <div class="card">
+            {% if p.image %}<a class="card-img" href="{{ p.url }}"><img src="{{ p.image | relative_url }}" alt="" loading="lazy"></a>{% endif %}
+            <span class="venue">{{ p.venue }}</span>
+            <a class="card-title" href="{{ p.url }}">{{ p.title }}</a>
+            <p class="card-authors">{{ p.authors }}</p>
+            <p class="card-links">{% for l in p.links %}<a href="{{ l.url }}">[{{ l.name }}]</a> {% endfor %}</p>
+          </div>
+          {% endfor %}
+        </div>
+        {% if papers.size > 1 %}
+        <div class="nav-arrows">
+          <button class="prev" aria-label="Previous paper"><i class="fa-solid fa-chevron-left"></i></button>
+          <span class="counter">1 / {{ papers | size }}</span>
+          <button class="next" aria-label="Next paper"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+        {% endif %}
+      </div>
+    </section>
+    {% endfor %}
+    <p class="note">∗ equal contribution, † corresponding author.</p>
+  </div>
+</article>
+
+<article class="section" id="experience">
+  <div class="section-inner">
+    <p class="section-num">.03</p>
+    <h2 class="section-title">Experience</h2>
+
+    <h3 class="sub-title">Education</h3>
+    <ul class="timeline">
+      <li><span class="when">2024 – now</span><div><b>University of Georgia</b><br>Ph.D. in Computer Science · GPA 4.00/4.00<br><small>Advisor: Dr. Fei Dou</small></div></li>
+      <li><span class="when">2021 – 2022</span><div><b>University College London</b><br>M.Sc. in Scientific and Data-Intensive Computing</div></li>
+      <li><span class="when">2017 – 2021</span><div><b>University of Liverpool</b><br>B.Sc. in Computer Science and Engineering</div></li>
+    </ul>
+
+    <h3 class="sub-title">Research Experience</h3>
+    <ul class="timeline">
+      <li><span class="when">2024 – now</span><div><b>Graduate Research Assistant</b>, School of Computing, University of Georgia<br><small>Advisor: Dr. Fei Dou</small></div></li>
+      <li><span class="when">2023 – 2024</span><div><b>Research Assistant</b>, Hong Kong University of Science and Technology<br><small>Supervisor: Prof. Dit-Yan Yeung. Built MGTST, a multi-scale, cross-channel gated Transformer for multivariate long-term forecasting.</small></div></li>
+    </ul>
+
+    <h3 class="sub-title">Teaching</h3>
+    <ul class="timeline">
+      <li><span class="when">Fall 2025, Fall 2026</span><div><b>Teaching Assistant</b>, CSCI 4470: Algorithms, UGA</div></li>
+      <li><span class="when">Fall 2024, Spring 2025</span><div><b>Teaching Assistant</b>, CSCI 1302: Software Development, UGA</div></li>
+    </ul>
+  </div>
+</article>
