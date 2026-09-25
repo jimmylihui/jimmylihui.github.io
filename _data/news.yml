@@ -12,9 +12,6 @@
 - date: "2026/05/10"
   text: '<a href="https://dl.acm.org/doi/10.1145/3774906.3802796">ADLGen</a> (co-first author) is published in the proceedings of <b>ACM SenSys 2026</b>.'
   text_zh: '<a href="https://dl.acm.org/doi/10.1145/3774906.3802796">ADLGen</a>（共同一作）发表于 <b>ACM SenSys 2026</b> 论文集。'
-- date: "2025"
-  text: '<a href="https://openreview.net/forum?id=jSW3GZQoVJ">Peak-R1</a> is accepted to the Learning from Time Series for Health Workshop @ <b>NeurIPS 2025</b>.'
-  text_zh: '<a href="https://openreview.net/forum?id=jSW3GZQoVJ">Peak-R1</a> 被 <b>NeurIPS 2025</b> Learning from Time Series for Health Workshop 接收。'
-- date: "2024/08"
+- date: "2024/08/14"
   text: 'Started my Ph.D. in Computer Science at the University of Georgia with <a href="https://fayedou.github.io/">Dr. Fei Dou</a>.'
   text_zh: '加入佐治亚大学攻读计算机科学博士，导师为 <a href="https://fayedou.github.io/">Fei Dou 博士</a>。'
