@@ -12,11 +12,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400{% if zh %}&family=Noto+Sans+SC:wght@300;400;500;700{% endif %}&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css">
-  <link rel="stylesheet" href="{{ '/assets/css/orson.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/orson.css' | relative_url }}?v={{ site.time | date: '%s' }}">
   {% if page.alt_url %}<link rel="alternate" hreflang="{% if zh %}en{% else %}zh-CN{% endif %}" href="{{ page.alt_url | absolute_url }}">{% endif %}
 </head>
 <body>
   {% assign a = site.author %}
+  {% if page.alt_url %}<a class="lang-fab" href="{{ page.alt_url | relative_url }}" lang="{% if zh %}en{% else %}zh-CN{% endif %}">{% if zh %}EN{% else %}中文{% endif %}</a>{% endif %}
   <button class="menu-toggle" aria-label="Open menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
 
   <aside class="sidebar">
@@ -61,11 +62,11 @@
     {% endif %}
   </main>
 
-  <script src="{{ '/assets/js/orson.js' | relative_url }}"></script>
+  <script src="{{ '/assets/js/orson.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>
   {% if site.goatcounter != "" and site.goatcounter %}
   <script>window.GC_SITE = "https://{{ site.goatcounter }}.goatcounter.com";</script>
   {% if jekyll.environment == "production" %}<script data-goatcounter="https://{{ site.goatcounter }}.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>{% endif %}
-  <script src="{{ '/assets/js/owner-stats.js' | relative_url }}" defer></script>
+  <script src="{{ '/assets/js/owner-stats.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
   {% endif %}
 </body>
 </html>
