@@ -24,7 +24,7 @@ Athens, Georgia, USA · [jl57095@uga.edu](mailto:jl57095@uga.edu)<br>
 
 # 🧬 Biography
 
-Jiahui Li is a Ph.D. student in Computer Science at the University of Georgia, supervised by Dr. Fei Dou. His research focuses on evidence-grounded and explainable artificial intelligence for clinical diagnosis and health sensing, including multimodal clinical reasoning, physiological time-series modeling, and trustworthy evaluation. His work spans electrocardiography, photoplethysmography, ballistocardiography, bodyseismography, vision-language models, and instruction-tuned large language models.
+Jiahui Li is a Ph.D. student in Computer Science at the University of Georgia, supervised by [Dr. Fei Dou](https://fayedou.github.io/). His research focuses on evidence-grounded and explainable artificial intelligence for clinical diagnosis and health sensing, including multimodal clinical reasoning, physiological time-series modeling, and trustworthy evaluation. His work spans electrocardiography, photoplethysmography, ballistocardiography, bodyseismography, vision-language models, and instruction-tuned large language models.
 
 
 # 📖 Education
@@ -37,7 +37,7 @@ Jiahui Li is a Ph.D. student in Computer Science at the University of Georgia, s
 # 🔬 Research Experience
 
 **Graduate Research Assistant**, School of Computing, University of Georgia — *Aug. 2024 – Present*<br>
-Advisor: Dr. Fei Dou
+Advisor: [Dr. Fei Dou](https://fayedou.github.io/)
 
 - **DynamicDx** (Lead): Built a reproducible benchmark of 71 video-grounded neurological consultations across 11 phenomenologies. Evaluation of five vision-language models localized the primary diagnostic bottleneck to evidence acquisition rather than downstream interpretation.
 - **EarlyDx** (Lead): Designed an admission-anchored benchmark for open-ended, evidence-supported emergency-department diagnosis, testing whether generated diagnoses are grounded in retrievable clinical evidence.
