@@ -2,6 +2,7 @@
 permalink: /
 title: ""
 layout: orson
+alt_url: /zh/
 redirect_from:
   - /about/
   - /about.html
@@ -56,50 +57,7 @@ sections:
   </div>
 </article>
 
-<article class="section" id="research">
-  <div class="section-inner">
-    <p class="section-num">.02</p>
-    <h2 class="section-title">Research</h2>
-
-    <a class="banner-btn" href="{{ site.author.googlescholar }}">See the full publication list on Google Scholar <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-
-    <h3 class="themes-head">Research Themes:</h3>
-    <ul class="theme-index">
-      {% for t in pubs.themes %}
-      <li><a href="#theme-{{ t.id }}">{{ t.title }}</a></li>
-      {% endfor %}
-    </ul>
-
-    {% for t in pubs.themes %}
-    <section class="theme" id="theme-{{ t.id }}">
-      <h3 class="theme-title">{{ t.title }}</h3>
-      <p class="theme-blurb">{{ t.blurb }}</p>
-      {% assign papers = pubs.papers | where: "theme", t.id %}
-      <div class="carousel" data-count="{{ papers | size }}">
-        <div class="slides">
-          {% for p in papers %}
-          <div class="card">
-            {% if p.image %}<a class="card-img" href="{{ p.url }}"><img src="{{ p.image | relative_url }}" alt="" loading="lazy"></a>{% endif %}
-            <span class="venue">{{ p.venue }}</span>
-            <a class="card-title" href="{{ p.url }}">{{ p.title }}</a>
-            <p class="card-authors">{{ p.authors }}</p>
-            <p class="card-links">{% for l in p.links %}<a href="{{ l.url }}">[{{ l.name }}]</a> {% endfor %}</p>
-          </div>
-          {% endfor %}
-        </div>
-        {% if papers.size > 1 %}
-        <div class="nav-arrows">
-          <button class="prev" aria-label="Previous paper"><i class="fa-solid fa-chevron-left"></i></button>
-          <span class="counter">1 / {{ papers | size }}</span>
-          <button class="next" aria-label="Next paper"><i class="fa-solid fa-chevron-right"></i></button>
-        </div>
-        {% endif %}
-      </div>
-    </section>
-    {% endfor %}
-    <p class="note">∗ equal contribution, † corresponding author.</p>
-  </div>
-</article>
+{% include research.html lang="en" %}
 
 <article class="section" id="experience">
   <div class="section-inner">

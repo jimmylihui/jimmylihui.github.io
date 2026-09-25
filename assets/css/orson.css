@@ -45,6 +45,13 @@ img { max-width: 100%; }
 .name { color: #fff; font-weight: 300; font-size: 26px; margin: 18px 0 4px; letter-spacing: .5px; }
 .name-zh { color: #8d96a8; font-size: 22px; font-weight: 300; margin: 0 0 8px; letter-spacing: 2px; }
 .tagline { font-size: 13px; line-height: 1.5; margin: 0; color: #9aa3b5; }
+.lang-switch { display: inline-flex; align-items: center; gap: 6px; margin-top: 12px; padding: 3px 12px;
+  border: 1px solid rgba(255,255,255,.22); border-radius: 14px; color: #cfd5e0; font-size: 12.5px; text-decoration: none; }
+.lang-switch:hover { color: #fff; border-color: rgba(255,255,255,.5); }
+:lang(zh) body, html:lang(zh-CN) body { font-family: "Open Sans", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif; }
+html:lang(zh-CN) h1, html:lang(zh-CN) h2, html:lang(zh-CN) h3, html:lang(zh-CN) .section-title { font-family: Lato, "Noto Sans SC", "PingFang SC", sans-serif; }
+html:lang(zh-CN) .section-title, html:lang(zh-CN) .sub-title { letter-spacing: 2px; }
+html:lang(zh-CN) .about-text p, html:lang(zh-CN) .news li, html:lang(zh-CN) .callout { line-height: 1.85; }
 .menu-label { text-align: center; letter-spacing: 3px; text-transform: uppercase; font-size: 15px;
   margin: 30px 0 14px; font-family: Lato, sans-serif; color: #8d96a8; }
 .menu { border-top: 1px solid rgba(255,255,255,.08); padding-top: 10px; }

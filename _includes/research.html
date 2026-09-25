@@ -1,0 +1,46 @@
+{% if include.lang == "zh" %}{% assign zh = true %}{% else %}{% assign zh = false %}{% endif %}
+{% assign pubs = site.data.publications %}
+<article class="section" id="research">
+  <div class="section-inner">
+    <p class="section-num">.02</p>
+    <h2 class="section-title">{% if zh %}研究{% else %}Research{% endif %}</h2>
+
+    <a class="banner-btn" href="{{ site.author.googlescholar }}">{% if zh %}在 Google Scholar 查看全部论文{% else %}See the full publication list on Google Scholar{% endif %} <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+    <h3 class="themes-head">{% if zh %}研究方向：{% else %}Research Themes:{% endif %}</h3>
+    <ul class="theme-index">
+      {% for t in pubs.themes %}
+      <li><a href="#theme-{{ t.id }}">{% if zh %}{{ t.title_zh }}{% else %}{{ t.title }}{% endif %}</a></li>
+      {% endfor %}
+    </ul>
+
+    {% for t in pubs.themes %}
+    <section class="theme" id="theme-{{ t.id }}">
+      <h3 class="theme-title">{% if zh %}{{ t.title_zh }}{% else %}{{ t.title }}{% endif %}</h3>
+      <p class="theme-blurb">{% if zh %}{{ t.blurb_zh }}{% else %}{{ t.blurb }}{% endif %}</p>
+      {% assign papers = pubs.papers | where: "theme", t.id %}
+      <div class="carousel" data-count="{{ papers | size }}">
+        <div class="slides">
+          {% for p in papers %}
+          <div class="card">
+            {% if p.image %}<a class="card-img" href="{{ p.url }}"><img src="{{ p.image | relative_url }}" alt="" loading="lazy"></a>{% endif %}
+            <span class="venue">{% if zh %}{{ p.venue | replace: "Preprint", "预印本" }}{% else %}{{ p.venue }}{% endif %}</span>
+            <a class="card-title" href="{{ p.url }}">{{ p.title }}</a>
+            <p class="card-authors">{{ p.authors }}</p>
+            <p class="card-links">{% for l in p.links %}<a href="{{ l.url }}">[{{ l.name }}]</a> {% endfor %}</p>
+          </div>
+          {% endfor %}
+        </div>
+        {% if papers.size > 1 %}
+        <div class="nav-arrows">
+          <button class="prev" aria-label="{% if zh %}上一篇{% else %}Previous paper{% endif %}"><i class="fa-solid fa-chevron-left"></i></button>
+          <span class="counter">1 / {{ papers | size }}</span>
+          <button class="next" aria-label="{% if zh %}下一篇{% else %}Next paper{% endif %}"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+        {% endif %}
+      </div>
+    </section>
+    {% endfor %}
+    <p class="note">{% if zh %}∗ 共同第一作者，† 通讯作者。{% else %}∗ equal contribution, † corresponding author.{% endif %}</p>
+  </div>
+</article>

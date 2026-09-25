@@ -1,0 +1,84 @@
+---
+permalink: /zh/
+title: ""
+layout: orson
+lang: zh
+alt_url: /
+excerpt: "李佳晖（Jiahui Li），佐治亚大学计算机科学博士生，研究面向临床诊断与健康感知的可解释人工智能。"
+sections:
+  - { id: about, title: 关于, icon: "fa-solid fa-house" }
+  - { id: research, title: 研究, icon: "fa-solid fa-wave-square" }
+  - { id: experience, title: 经历, icon: "fa-solid fa-graduation-cap" }
+---
+
+<article class="section" id="about">
+  <div class="section-inner">
+    <p class="section-num">.01</p>
+    <h2 class="section-title">关于</h2>
+
+    <div class="about-grid">
+      <img class="about-photo" src="{{ '/images/profile.png' | relative_url }}" alt="李佳晖">
+      <div class="about-text">
+        <p>你好！我是李佳晖，<a href="https://www.uga.edu/">佐治亚大学（University of Georgia）</a>计算机科学博士生，导师为 Fei Dou 博士。此前我在<a href="https://hkust.edu.hk/">香港科技大学</a>担任研究助理，师从 Dit-Yan Yeung 教授。我在<a href="https://www.ucl.ac.uk/">伦敦大学学院（UCL）</a>获得硕士学位，在<a href="https://www.liverpool.ac.uk/">利物浦大学</a>获得学士学位。</p>
+        <p>我的研究方向是<b>面向临床诊断与健康感知的、基于证据的可解释人工智能</b>：让模型读取生理信号（ECG、PPG、BCG、BSG）和临床记录，主动获取所需证据，并给出医生可以审查的诊断推理过程。</p>
+        <p class="about-links">
+          <a href="{{ '/files/CV_Jiahui_Li.pdf' | relative_url }}">简历（英文 PDF）</a>
+          <span class="dot"></span>
+          <a href="{{ site.author.googlescholar }}">Google Scholar</a>
+        </p>
+      </div>
+    </div>
+
+    <figure class="overview">
+      <div class="pipeline">
+        <a class="stage s-signal" href="#theme-signal"><i class="fa-solid fa-heart-pulse"></i><b>信号与病历</b><small>ECG · PPG · BCG · BSG · EHR</small></a>
+        <span class="arrow"><i class="fa-solid fa-chevron-right"></i></span>
+        <a class="stage s-evidence" href="#theme-signal"><i class="fa-solid fa-magnifying-glass-chart"></i><b>证据获取</b><small>峰值 · 片段 · 检查发现</small></a>
+        <span class="arrow"><i class="fa-solid fa-chevron-right"></i></span>
+        <a class="stage s-reason" href="#theme-clinical"><i class="fa-solid fa-brain"></i><b>大模型推理</b><small>指令微调 · 可审计</small></a>
+        <span class="arrow"><i class="fa-solid fa-chevron-right"></i></span>
+        <a class="stage s-dx" href="#theme-clinical"><i class="fa-solid fa-stethoscope"></i><b>可信诊断</b><small>有基准 · 有证据</small></a>
+      </div>
+      <figcaption>研究概览</figcaption>
+    </figure>
+
+    <div class="callout">
+      <b>欢迎科研合作！</b>如果你从事健康感知、临床人工智能或基于生理数据的大模型推理研究，欢迎<a href="mailto:{{ site.author.email }}">给我发邮件</a>。
+    </div>
+
+    <h3 class="sub-title">最新动态</h3>
+    <ul class="news">
+      {% for n in site.data.news %}
+      <li><span class="news-date">{{ n.date }}：</span>{{ n.text_zh | default: n.text }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+</article>
+
+{% include research.html lang="zh" %}
+
+<article class="section" id="experience">
+  <div class="section-inner">
+    <p class="section-num">.03</p>
+    <h2 class="section-title">经历</h2>
+
+    <h3 class="sub-title">教育背景</h3>
+    <ul class="timeline">
+      <li><span class="when">2024 – 至今</span><div><b>佐治亚大学（University of Georgia）</b><br>计算机科学 博士 · GPA 4.00/4.00<br><small>导师：Fei Dou 博士</small></div></li>
+      <li><span class="when">2021 – 2022</span><div><b>伦敦大学学院（UCL）</b><br>科学与数据密集型计算 硕士</div></li>
+      <li><span class="when">2017 – 2021</span><div><b>利物浦大学</b><br>计算机科学与工程 学士</div></li>
+    </ul>
+
+    <h3 class="sub-title">科研经历</h3>
+    <ul class="timeline">
+      <li><span class="when">2024 – 至今</span><div><b>研究助理（Graduate Research Assistant）</b>，佐治亚大学计算学院<br><small>导师：Fei Dou 博士</small></div></li>
+      <li><span class="when">2023 – 2024</span><div><b>研究助理</b>，香港科技大学<br><small>导师：Dit-Yan Yeung 教授。提出 MGTST：一种面向多变量长期预测的多尺度、跨通道门控 Transformer。</small></div></li>
+    </ul>
+
+    <h3 class="sub-title">教学经历</h3>
+    <ul class="timeline">
+      <li><span class="when">2025 秋、2026 秋</span><div><b>助教</b>，CSCI 4470：算法，佐治亚大学</div></li>
+      <li><span class="when">2024 秋、2025 春</span><div><b>助教</b>，CSCI 1302：软件开发，佐治亚大学</div></li>
+    </ul>
+  </div>
+</article>

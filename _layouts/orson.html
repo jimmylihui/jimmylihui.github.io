@@ -1,17 +1,19 @@
 <!doctype html>
-<html lang="en">
+{% if page.lang == "zh" %}{% assign zh = true %}{% else %}{% assign zh = false %}{% endif %}
+<html lang="{% if zh %}zh-CN{% else %}en{% endif %}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{% if page.title != '' and page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  <title>{% if page.title != '' and page.title %}{{ page.title }} | {% endif %}{% if zh %}{{ site.author.name_zh }} | {% endif %}{{ site.title }}</title>
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | escape }}">
   <link rel="icon" type="image/png" href="{{ '/images/site-logo.png' | relative_url }}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400{% if zh %}&family=Noto+Sans+SC:wght@300;400;500;700{% endif %}&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css">
   <link rel="stylesheet" href="{{ '/assets/css/orson.css' | relative_url }}">
+  {% if page.alt_url %}<link rel="alternate" hreflang="{% if zh %}en{% else %}zh-CN{% endif %}" href="{{ page.alt_url | absolute_url }}">{% endif %}
 </head>
 <body>
   {% assign a = site.author %}
@@ -19,20 +21,21 @@
 
   <aside class="sidebar">
     <div class="sidebar-top">
-      <a href="{{ '/' | relative_url }}" class="avatar-link"><img class="avatar" src="{{ a.avatar | relative_url }}" alt="{{ a.name }}"></a>
+      <a href="{% if zh %}{{ '/zh/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}" class="avatar-link"><img class="avatar" src="{{ a.avatar | relative_url }}" alt="{{ a.name }}"></a>
       <h1 class="name">{{ a.name }}</h1>
       {% if a.name_zh %}<p class="name-zh">{{ a.name_zh }}</p>{% endif %}
-      <p class="tagline">{{ a.bio }}</p>
+      <p class="tagline">{% if zh %}佐治亚大学计算机科学博士生{% else %}{{ a.bio }}{% endif %}</p>
+      {% if page.alt_url %}<a class="lang-switch" href="{{ page.alt_url | relative_url }}" lang="{% if zh %}en{% else %}zh-CN{% endif %}"><i class="fa-solid fa-language"></i> {% if zh %}English{% else %}中文{% endif %}</a>{% endif %}
     </div>
 
-    <p class="menu-label">Menu</p>
+    <p class="menu-label">{% if zh %}菜单{% else %}Menu{% endif %}</p>
     <nav class="menu">
       {% for s in page.sections %}
-      <a href="{% if page.url != '/' %}{{ '/' | relative_url }}{% endif %}#{{ s.id }}" data-target="{{ s.id }}">
+      <a href="{% if page.single %}{% if zh %}{{ '/zh/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}{% endif %}#{{ s.id }}" data-target="{{ s.id }}">
         <span>{{ s.title }}</span><i class="{{ s.icon }}"></i>
       </a>
       {% endfor %}
-      <a href="{{ '/cv/' | relative_url }}" class="{% if page.url == '/cv/' %}active{% endif %}"><span>CV</span><i class="fa-regular fa-file-lines"></i></a>
+      <a href="{{ '/cv/' | relative_url }}" class="{% if page.url == '/cv/' %}active{% endif %}"><span>{% if zh %}简历{% else %}CV{% endif %}</span><i class="fa-regular fa-file-lines"></i></a>
     </nav>
 
     <div class="social">

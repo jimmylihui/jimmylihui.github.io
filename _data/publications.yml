@@ -4,12 +4,18 @@ themes:
   - id: signal
     title: "Explainable Physiological Signal Understanding"
     blurb: "Instruction-tuned LLMs that read raw ECG, PPG, BCG and BSG waveforms, locate diagnostic landmarks, and leave an auditable evidence trail."
+    title_zh: "可解释的生理信号理解"
+    blurb_zh: "用指令微调的大语言模型直接读取 ECG、PPG、BCG、BSG 原始波形，定位诊断关键点，并留下可审计的证据链。"
   - id: clinical
     title: "Evidence-Grounded Clinical Reasoning & Evaluation"
     blurb: "Benchmarks and methods that test whether a model's diagnosis is actually supported by retrievable clinical evidence."
+    title_zh: "基于证据的临床推理与评测"
+    blurb_zh: "构建基准与方法，检验模型给出的诊断是否真正有可检索的临床证据支撑。"
   - id: sensing
     title: "Ubiquitous Health & Ambient Sensing"
     blurb: "Contactless and smart-home sensing for health monitoring and human activity modeling."
+    title_zh: "普适健康与环境感知"
+    blurb_zh: "面向健康监测与人体活动建模的非接触式感知与智能家居感知。"
 
 papers:
   - theme: signal
