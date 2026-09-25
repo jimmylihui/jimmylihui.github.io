@@ -47,7 +47,7 @@ Advisor: [Dr. Fei Dou](https://fayedou.github.io/)
 - **ADLGen** (Co-Lead, co-first author): Synthesized symbolic, event-triggered smart-home sensor sequences for activity modeling and ambient assisted living.
 
 **Research Assistant**, Hong Kong University of Science and Technology — *2023 – 2024*<br>
-Supervisor: Prof. Dit-Yan Yeung
+Supervisor: [Prof. Dit-Yan Yeung](https://cse.hkust.edu.hk/faculty/dyyeung/)
 
 - Built MGTST, a multi-scale, cross-channel gated Transformer for multivariate long-term forecasting in high-dimensional time series.
 
