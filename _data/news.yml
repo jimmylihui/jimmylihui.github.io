@@ -1,16 +1,17 @@
-# Newest first. `date` is free text (YYYY/MM or YYYY); `text` may contain HTML.
-- date: "2026"
+# Newest first. `date` is YYYY/MM/DD (or YYYY/MM when the exact day is unknown);
+# `text` / `text_zh` may contain HTML.
+- date: "2026/09/24"
   text: 'Our paper <a href="https://arxiv.org/abs/2605.16441">DeepArrhythmia</a> on evidence-acquiring ECG arrhythmia classification is accepted to <b>NeurIPS 2026</b>!'
   text_zh: '论文 <a href="https://arxiv.org/abs/2605.16441">DeepArrhythmia</a>（基于证据获取的心电心律失常分类）被 <b>NeurIPS 2026</b> 接收！'
-- date: "2026"
-  text: '<a href="https://dl.acm.org/doi/10.1145/3810224">Peak-Detector</a>, explainable peak detection with instruction-tuned LLMs, is published in <b>ACM IMWUT (UbiComp) 2026</b>.'
-  text_zh: '<a href="https://dl.acm.org/doi/10.1145/3810224">Peak-Detector</a>（基于指令微调大语言模型的可解释峰值检测）发表于 <b>ACM IMWUT (UbiComp) 2026</b>。'
-- date: "2026"
-  text: '<a href="https://dl.acm.org/doi/10.1145/3774906.3802796">ADLGen</a> (co-first author) is accepted to <b>ACM SenSys 2026</b>.'
-  text_zh: '<a href="https://dl.acm.org/doi/10.1145/3774906.3802796">ADLGen</a>（共同一作）被 <b>ACM SenSys 2026</b> 接收。'
-- date: "2026/07"
+- date: "2026/07/30"
   text: 'Released <a href="https://arxiv.org/abs/2607.28788">EarlyDx</a>, an admission-anchored benchmark for evidence-supported ED diagnosis.'
   text_zh: '发布 <a href="https://arxiv.org/abs/2607.28788">EarlyDx</a>：一个以入院时刻为锚点、评测急诊诊断证据支撑度的基准。'
+- date: "2026/06/15"
+  text: '<a href="https://dl.acm.org/doi/10.1145/3810224">Peak-Detector</a>, explainable peak detection with instruction-tuned LLMs, is published in <b>ACM IMWUT (UbiComp) 2026</b>.'
+  text_zh: '<a href="https://dl.acm.org/doi/10.1145/3810224">Peak-Detector</a>（基于指令微调大语言模型的可解释峰值检测）发表于 <b>ACM IMWUT (UbiComp) 2026</b>。'
+- date: "2026/05/10"
+  text: '<a href="https://dl.acm.org/doi/10.1145/3774906.3802796">ADLGen</a> (co-first author) is published in the proceedings of <b>ACM SenSys 2026</b>.'
+  text_zh: '<a href="https://dl.acm.org/doi/10.1145/3774906.3802796">ADLGen</a>（共同一作）发表于 <b>ACM SenSys 2026</b> 论文集。'
 - date: "2025"
   text: '<a href="https://openreview.net/forum?id=jSW3GZQoVJ">Peak-R1</a> is accepted to the Learning from Time Series for Health Workshop @ <b>NeurIPS 2025</b>.'
   text_zh: '<a href="https://openreview.net/forum?id=jSW3GZQoVJ">Peak-R1</a> 被 <b>NeurIPS 2025</b> Learning from Time Series for Health Workshop 接收。'
