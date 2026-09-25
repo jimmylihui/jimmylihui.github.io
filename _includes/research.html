@@ -23,7 +23,7 @@
         <div class="slides">
           {% for p in papers %}
           <div class="card">
-            {% if p.image %}<a class="card-img" href="{{ p.url }}"><img src="{{ p.image | relative_url }}" alt="" loading="lazy"></a>{% endif %}
+            {% if p.image %}<a class="card-img" href="{{ p.url }}"><img src="{{ p.image | relative_url }}" alt=""></a>{% endif %}
             <span class="venue">{% if zh %}{{ p.venue | replace: "Preprint", "预印本" }}{% else %}{{ p.venue }}{% endif %}</span>
             <a class="card-title" href="{{ p.url }}">{{ p.title }}</a>
             <p class="card-authors">{{ p.authors }}</p>
