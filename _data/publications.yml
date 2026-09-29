@@ -8,9 +8,9 @@ themes:
     blurb_zh: "用指令微调的大语言模型直接读取 ECG、PPG、BCG、BSG 原始波形，定位诊断关键点，并留下可审计的证据链。"
   - id: clinical
     title: "Evidence-Grounded Clinical Reasoning & Evaluation"
-    blurb: "Benchmarks and methods that test whether a model's diagnosis is actually supported by retrievable clinical evidence."
+    blurb: "Benchmarks and methods that test whether a model's diagnosis is actually supported by the evidence it acquires, from patient videos to clinical records."
     title_zh: "基于证据的临床推理与评测"
-    blurb_zh: "构建基准与方法，检验模型给出的诊断是否真正有可检索的临床证据支撑。"
+    blurb_zh: "构建基准与方法，检验模型给出的诊断是否真正由它所获取的证据支撑，证据来源涵盖患者视频与临床记录。"
   - id: sensing
     title: "Ubiquitous Health & Ambient Sensing"
     blurb: "Contactless and smart-home sensing for health monitoring and human activity modeling."
@@ -45,6 +45,16 @@ papers:
     url: https://openreview.net/forum?id=jSW3GZQoVJ
     links:
       - { name: openreview, url: "https://openreview.net/forum?id=jSW3GZQoVJ" }
+
+  - theme: clinical
+    title: "DynamicDx: Evaluating Evidence Acquisition in Video-Based Diagnosis"
+    authors: "<b>Jiahui Li</b>, Yutong Guo, Nan Yang, Wenzhan Song, Jin Lu, Fei Dou†"
+    venue: "Preprint 2026"
+    image: images/papers/thumbs/dynamicdx.png
+    url: https://arxiv.org/abs/2609.32957
+    links:
+      - { name: pdf, url: "https://arxiv.org/pdf/2609.32957" }
+      - { name: code, url: "https://github.com/jimmylihui/dynamicDx" }
 
   - theme: clinical
     title: "EarlyDx: An Admission-Anchored Benchmark for Open-Ended Generation of Evidence-Supported ED-Encounter Diagnoses"

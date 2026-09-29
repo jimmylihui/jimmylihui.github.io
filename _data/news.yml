@@ -1,5 +1,8 @@
 # Newest first. `date` is YYYY/MM/DD (or YYYY/MM when the exact day is unknown);
 # `text` / `text_zh` may contain HTML.
+- date: "2026/09/26"
+  text: 'Released <a href="https://arxiv.org/abs/2609.32957">DynamicDx</a>, a benchmark of how vision-language models acquire evidence when diagnosing from patient videos.'
+  text_zh: '发布 <a href="https://arxiv.org/abs/2609.32957">DynamicDx</a>：评测视觉语言模型从患者视频做诊断时如何获取证据的基准。'
 - date: "2026/09/24"
   text: 'Our paper <a href="https://arxiv.org/abs/2605.16441">DeepArrhythmia</a> on evidence-acquiring ECG arrhythmia classification is accepted to <b>NeurIPS 2026</b>!'
   text_zh: '论文 <a href="https://arxiv.org/abs/2605.16441">DeepArrhythmia</a>（基于证据获取的心电心律失常分类）被 <b>NeurIPS 2026</b> 接收！'
