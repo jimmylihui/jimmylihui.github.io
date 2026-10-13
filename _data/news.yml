@@ -1,8 +1,8 @@
 # Newest first. `date` is YYYY/MM/DD (or YYYY/MM when the exact day is unknown);
 # `text` / `text_zh` may contain HTML.
 - date: "2026/10/13"
-  text: 'Honored to receive the <b>2026 James L. Carmon Scholarship Award</b> from the University of Georgia!'
-  text_zh: '荣获佐治亚大学 <b>2026 年 James L. Carmon 奖学金</b>！'
+  text: 'Honored to receive the <b>2027 James L. Carmon Scholarship Award</b> from the University of Georgia!'
+  text_zh: '荣获佐治亚大学 <b>2027 年 James L. Carmon 奖学金</b>！'
 - date: "2026/09/26"
   text: 'Released <a href="https://arxiv.org/abs/2609.32957">DynamicDx</a>, a benchmark of how vision-language models acquire evidence when diagnosing from patient videos.'
   text_zh: '发布 <a href="https://arxiv.org/abs/2609.32957">DynamicDx</a>：评测视觉语言模型从患者视频做诊断时如何获取证据的基准。'
