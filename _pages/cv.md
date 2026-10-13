@@ -71,6 +71,11 @@ Supervisor: [Prof. Dit-Yan Yeung](https://cse.hkust.edu.hk/faculty/dyyeung/)
 - Zicheng Liu, **Jiahui Li**, Siyuan Li, Zelin Zang, Cheng Tan, Yufei Huang, Yajing Bai, Stan Z. Li. "[GenBench: A Benchmarking Suite for Systematic Evaluation of Genomic Foundation Models](https://arxiv.org/abs/2406.01627)." *arXiv preprint*, 2024.
 
 
+# 🏆 Honors and Awards
+
+- **James L. Carmon Scholarship Award**, University of Georgia — **2027**. University-wide graduate scholarship recognizing innovative use of computing in dissertation research.
+
+
 # 👨‍🏫 Teaching Assistant
 
 - **CSCI 1302: Software Development** — Fall 2024 and Spring 2025, University of Georgia.
