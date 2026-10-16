@@ -73,7 +73,8 @@ Supervisor: [Prof. Dit-Yan Yeung](https://cse.hkust.edu.hk/faculty/dyyeung/)
 
 # 🏆 Honors and Awards
 
-- **James L. Carmon Scholarship Award**, University of Georgia — **2027**. University-wide graduate scholarship recognizing innovative use of computing in dissertation research.
+- **UGA James L. Carmon Scholarship Award (2027)** — A university-wide graduate research award with one primary recipient selected annually.
+- **NeurIPS 2026 Financial Assistance Award** — Full conference and workshop registration, plus an Atlanta hotel stay.
 
 
 # 👨‍🏫 Teaching Assistant
