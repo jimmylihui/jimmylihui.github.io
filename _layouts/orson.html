@@ -63,6 +63,7 @@
   </main>
 
   <script src="{{ '/assets/js/orson.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>
+  {% unless page.single %}<script src="{{ '/assets/js/avatar-evolution.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>{% endunless %}
   {% if site.goatcounter != "" and site.goatcounter %}
   <script>window.GC_SITE = "https://{{ site.goatcounter }}.goatcounter.com";</script>
   {% if jekyll.environment == "production" %}<script data-goatcounter="https://{{ site.goatcounter }}.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>{% endif %}

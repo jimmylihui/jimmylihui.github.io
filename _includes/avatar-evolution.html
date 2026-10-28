@@ -1,0 +1,13 @@
+{% assign avatar_zh = false %}{% if page.lang == 'zh' %}{% assign avatar_zh = true %}{% endif %}
+<figure class="avatar-evolution" data-avatar-evolution data-stage-base="{{ '/images/avatar-evolution/stage-' | relative_url }}" data-lang="{% if avatar_zh %}zh{% else %}en{% endif %}">
+  <div class="avatar-evolution-frame">
+    <img class="about-photo" src="{{ '/images/profile.png' | relative_url }}" width="670" height="718" alt="{% if avatar_zh %}李佳晖{% else %}Jiahui Li{% endif %}" draggable="false">
+    <img class="avatar-evolution-overlay" alt="" aria-hidden="true" draggable="false" hidden>
+  </div>
+  <figcaption class="avatar-evolution-controls" hidden>
+    <div class="avatar-evolution-label"><label for="avatar-intensity">GigaChad</label><output for="avatar-intensity">{% if avatar_zh %}原照{% else %}Original{% endif %}</output></div>
+    <input id="avatar-intensity" class="avatar-evolution-range" type="range" min="0" max="8" step="1" value="0" aria-label="{% if avatar_zh %}GigaChad 强度{% else %}GigaChad intensity{% endif %}" aria-describedby="avatar-instructions avatar-status">
+    <p id="avatar-instructions" class="avatar-evolution-hint">{% if avatar_zh %}拖动照片或滑杆 · 0–8 档{% else %}Drag photo or slider · 0–8{% endif %}</p>
+    <p id="avatar-status" class="avatar-evolution-status" role="status"></p>
+  </figcaption>
+</figure>
