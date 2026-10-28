@@ -19,7 +19,8 @@
         var image = new Image();
         image.onload = function () { resolve(image.src); };
         image.onerror = reject;
-        image.src = root.dataset.stageBase + stage + '.webp';
+        // Refresh the corrected frames for visitors with the earlier images cached.
+        image.src = root.dataset.stageBase + stage + '.webp' + (stage >= 6 ? '?v=2' : '');
       });
       return cache[stage];
     }
