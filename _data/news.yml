@@ -1,8 +1,8 @@
 # Newest first. `date` is YYYY/MM/DD (or YYYY/MM when the exact day is unknown);
 # `text` / `text_zh` may contain HTML.
 - date: "2026/10/16"
-  text: '<b>NeurIPS 2026 Financial Assistance Award</b> — Full conference and workshop registration, plus an Atlanta hotel stay.'
-  text_zh: '获得 <b>NeurIPS 2026 参会资助</b>，包括全额会议及研讨会注册费，以及亚特兰大酒店住宿。'
+  text: '<b>NeurIPS 2026 Financial Assistance Award</b>'
+  text_zh: '获得 <b>NeurIPS 2026 参会资助</b>。'
 - date: "2026/10/13"
   text: '<b>UGA James L. Carmon Scholarship Award (2027)</b> — A university-wide graduate research award with one primary recipient selected annually.'
   text_zh: '荣获佐治亚大学 <b>2027 年 James L. Carmon 奖学金</b>！这是一项全校范围的研究生科研奖项，每年遴选一名主要获奖者。'
