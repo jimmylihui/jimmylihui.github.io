@@ -5,9 +5,8 @@
     <img class="avatar-evolution-overlay" alt="" aria-hidden="true" draggable="false" hidden>
   </div>
   <figcaption class="avatar-evolution-controls" hidden>
-    <div class="avatar-evolution-label"><label for="avatar-intensity">GigaChad</label><output for="avatar-intensity">{% if avatar_zh %}原照{% else %}Original{% endif %}</output></div>
-    <input id="avatar-intensity" class="avatar-evolution-range" type="range" min="0" max="8" step="1" value="0" aria-label="{% if avatar_zh %}GigaChad 强度{% else %}GigaChad intensity{% endif %}" aria-describedby="avatar-instructions avatar-status">
-    <p id="avatar-instructions" class="avatar-evolution-hint">{% if avatar_zh %}拖动照片或滑杆 · 0–8 档{% else %}Drag photo or slider · 0–8{% endif %}</p>
+    <output for="avatar-intensity" hidden>{% if avatar_zh %}原照{% else %}Original{% endif %}</output>
+    <input id="avatar-intensity" class="avatar-evolution-range" type="range" min="0" max="8" step="1" value="0" aria-label="{% if avatar_zh %}头像变化强度{% else %}Avatar evolution intensity{% endif %}" aria-describedby="avatar-status">
     <p id="avatar-status" class="avatar-evolution-status" role="status"></p>
   </figcaption>
 </figure>

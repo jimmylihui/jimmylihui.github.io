@@ -97,15 +97,10 @@ html:lang(zh-CN) .about-text p, html:lang(zh-CN) .news li, html:lang(zh-CN) .cal
 .avatar-evolution-frame .about-photo { display: block; width: 100%; height: 100%; margin: 0; box-shadow: none; }
 .avatar-evolution-overlay { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; pointer-events: none; }
 .avatar-evolution [hidden] { display: none; }
-.avatar-evolution-controls { margin-top: 10px; font-size: 11px; line-height: 1.5; }
-.avatar-evolution-label { display: flex; justify-content: space-between; align-items: baseline; gap: 4px; }
-.avatar-evolution-label label { font-weight: 700; color: var(--navy); }
-.avatar-evolution-label output { font-variant-numeric: tabular-nums; color: #555; }
+.avatar-evolution-controls { margin-top: 10px; }
 .avatar-evolution-range { display: block; width: 100%; height: 44px; margin: 0; accent-color: var(--navy); cursor: ew-resize; }
 .avatar-evolution-range:focus-visible { outline: 2px solid var(--navy); outline-offset: 2px; border-radius: 4px; }
-.avatar-evolution-hint { margin: 4px 0 0; text-align: center; color: #666; font-size: 10px; }
-.avatar-evolution-status { margin: 4px 0 0; color: #800000; font-size: 11px; }
-.avatar-evolution-status:empty { display: none; }
+.avatar-evolution-status { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; border: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
 .about-text p { margin: 0 0 12px; font-size: 15px; }
 .about-links { text-align: center; font-weight: 600; font-size: 14px !important; margin-top: 8px !important; }
 .about-links a { color: #333; text-decoration-color: rgba(0,0,0,.35); }
