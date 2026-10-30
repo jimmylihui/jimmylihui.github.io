@@ -66,6 +66,7 @@ Supervisor: [Prof. Dit-Yan Yeung](https://cse.hkust.edu.hk/faculty/dyyeung/)
 
 ### Collaborative Papers
 
+- Yuyan Wu, Yuanyuan Zhang, Yida Zhang, **Jiahui Li**, Fei Dou, WenZhan Song, Hae Young Noh. "[Contact-Free Continuous ABP Waveform Reconstruction via Triaxial Bodyseismography](https://doi.org/10.1145/3842436.3843808)." *Proceedings of the 4th International Workshop on Human-Centered Sensing, Modeling, and Intelligent Systems (HumanSys ’26)*, pp. 111–112. ACM, 2026.
 - Yuanyuan Zhang, Yida Zhang, **Jiahui Li**, Yuyan Wu, Fei Dou, Xiao Yin, Zhenlin An, Hae Young Noh, Wenzhan Song. "[Physics-Constrained Deep Learning Model for Contactless Blood Pressure Monitoring from Triaxial Bodyseismography](https://arxiv.org/abs/2608.23562)." *arXiv preprint*, 2026.
 - Haoran Lu, Luyang Fang, Ruidong Zhang, and others, including **Jiahui Li**. "[Alignment and Safety in Large Language Models: Safety Mechanisms, Training Paradigms, and Emerging Challenges](https://arxiv.org/abs/2507.19672)." *arXiv preprint*, 2025.
 - Zicheng Liu, **Jiahui Li**, Siyuan Li, Zelin Zang, Cheng Tan, Yufei Huang, Yajing Bai, Stan Z. Li. "[GenBench: A Benchmarking Suite for Systematic Evaluation of Genomic Foundation Models](https://arxiv.org/abs/2406.01627)." *arXiv preprint*, 2024.
