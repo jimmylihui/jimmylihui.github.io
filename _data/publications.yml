@@ -84,6 +84,14 @@ papers:
       - { name: pdf, url: "https://arxiv.org/pdf/2507.19672" }
 
   - theme: sensing
+    title: "Bodyseismography (BSG): Theoretical Foundation and Numerical Modeling"
+    authors: "Yuanyuan Zhang∗, Yuyan Wu∗, Sahas Biddappa, Yida Zhang, Jiayu Chen, Zixuan Zeng, Yixuan Li, <b>Jiahui Li</b>, Fei Dou, Zhenlin An, Younghoon Kwon, Hae Young Noh, WenZhan Song"
+    venue: "Preprint 2026"
+    url: https://arxiv.org/abs/2610.35844
+    links:
+      - { name: pdf, url: "https://arxiv.org/pdf/2610.35844" }
+
+  - theme: sensing
     title: "ADLGen: Synthesizing Symbolic, Event-Triggered Sensor Sequences for Smart-Home Human Activity Modeling"
     authors: "Weihang You∗, Hanqi Jiang∗, <b>Jiahui Li</b>∗ <em>(co-first author)</em>, Zishuai Liu∗, Tianming Liu, Jin Lu, Fei Dou†"
     venue: "ACM SenSys 2026"
